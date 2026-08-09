@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const entries = [
+  { date: 'LOG 01', author: 'T’zel', place: 'Sel Zonn Station', title: 'The first bad decision', text: 'We arrived for a quiet hand-off. Then the Empire arrived, which made the quiet part impossible. Sirona O’Keefe got us off the station. I am told this was the beginning.', image: '/media/corridor_breach.jpg' },
+  { date: 'LOG 02', author: 'Dax Throne', place: 'Felucia', title: 'A rescue with paperwork', text: 'Bail Organa wanted Admiral Varth extracted. Felucia wanted us dead. We compromised by rescuing the Admiral and leaving behind several things that were technically not ours.', image: '/media/data_vault.jpg' },
+  { date: 'LOG 03', author: 'Maurice', place: 'Cato Neimoidia', title: 'Palace maintenance', text: 'Darga’s palace was in a state. We found Master Denia in the basement, a Force-sensitive majordomo in the corridor, and enough evidence to make the Hutt very nervous. He fled before I could finish the repairs.', image: '/media/ship_galley.jpg' },
+  { date: 'LOG 04', author: 'Deech Zhetriss', place: 'Cloud City', title: 'Sabacc and slavery', text: 'We entered a tournament, followed an Imperial officer, and discovered Darga was trading Tibanna for slaves. The rescue became a starfighter operation. The paperwork remains unresolved.', image: '/media/bothan_prisoner.jpg' },
+  { date: 'LOG 05', author: 'Morkk', place: 'Almas', title: 'The academy below', text: 'The ruins tried to show us our fears. They were not as impressive as advertised. We recovered the Holocron. Draco did not enjoy the experience.', image: '/media/data_vault.jpg' },
+  { date: 'LOG 06', author: 'Borís', place: 'Nizon', title: 'First to strike', text: 'The Empire had the planet occupied. The Trandoshans had the slaves. The Nazren had a resistance waiting for a reason. We provided one. Then we left before anyone could ask us to stay.', image: '/media/boris_portrait.png' },
+  { date: 'LOG 07', author: 'DV-8', place: 'Coruscant', title: 'Architecture is a weapon', text: 'The Sarlacc Project was hidden in a skyscraper. The skyscraper was subsequently encouraged to become rubble. Structural analysis: satisfactory.', image: '/media/corridor_breach.jpg' },
+];
+---
+<Layout title="Travelogue" active="Travelogue">
+  <section class="detail-hero"><div class="page-wrap"><p class="kicker">Personal transmissions // spelling variant: UK/AUS</p><h1>Travelogue</h1><p class="lede" style="margin-top:24px">Brief reports from the route between trouble, more trouble, and whichever landing pad still has room.</p></div></section>
+  <section class="section"><div class="page-wrap"><div class="travel-grid">
+    {entries.map((entry) => <article class="plate travel-card"><img src={`${base}${entry.image.slice(1)}`} alt={entry.title} /><div class="travel-body"><div class="travel-tag"><span>{entry.date}</span><span>{entry.place}</span></div><h3>{entry.title}</h3><p>{entry.text}</p><span class="travel-author">Filed by {entry.author}</span></div></article>)}
+  </div></div></section>
+  <section class="section"><div class="page-wrap"><div class="section-head"><div><p class="kicker">Campaign context</p><h2>The route so far.</h2></div><p>Adapted from the first six Dawn of Defiance adventures: Sel Zonn Station, Felucia, Cato Neimoidia, Bespin, Almas, Nizon, and the first unpleasant look at the Sarlacc Project.</p></div><div class="log-list">
+    <div class="log-entry"><span class="date">01 / TRAITOR’S GAMBIT</span><div><h3>Sel Zonn → Felucia</h3><p>Bail Organa, Admiral Varth, an Imperial prison, and the beginning of a resistance that was meant to be discreet.</p></div><span class="place">Brentaal / Alderaan</span></div>
+    <div class="log-entry"><span class="date">02 / WRETCHED HIVE</span><div><h3>Cato Neimoidia</h3><p>Darga’s palace, Master Denia, and the first hard evidence of the Sarlacc Project.</p></div><span class="place">Ruins / palace</span></div>
+    <div class="log-entry"><span class="date">03 / QUEEN OF AIR</span><div><h3>Bespin</h3><p>Sabacc, Tibanna, a slave ship, and a luxury yacht that changed hands permanently.</p></div><span class="place">Cloud City</span></div>
+    <div class="log-entry"><span class="date">04 / ECHOES</span><div><h3>Almas</h3><p>A buried Jedi Academy, dark-side spirits, Inquisitor Draco, and one very useful Holocron.</p></div><span class="place">Cularin system</span></div>
+    <div class="log-entry"><span class="date">05 / FIRST TO STRIKE</span><div><h3>Nizon</h3><p>The Nazren resistance rises. Imperial facilities fall. Trandoshan slavers have a difficult afternoon.</p></div><span class="place">Maldrood sector</span></div>
+    <div class="log-entry"><span class="date">06 / CORE OF CORRUPTION</span><div><h3>Imperial Center</h3><p>The engineers are found. The tower collapses. The scale of the Sarlacc Project becomes impossible to ignore.</p></div><span class="place">Coruscant</span></div>
+  </div></div></section>
+</Layout>

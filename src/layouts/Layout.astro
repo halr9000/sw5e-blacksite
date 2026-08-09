@@ -1,0 +1,52 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const { title = 'THE BLACKSITE ARCHIVE', active = '' } = Astro.props;
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/travelogue/', label: 'Travelogue' },
+  { href: '/crew/', label: 'Crew Roster' },
+  { href: '/hangar/', label: 'Hangar' },
+  { href: '/gm/', label: 'The Storyteller' },
+  { href: '/about/', label: 'About' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1c1c1e" />
+    <title>{title} · BLACKSITE ARCHIVE</title>
+    <meta name="description" content="A classified field archive from a very active corner of the galaxy." />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href={`${base}`} aria-label="Blacksite Archive home">
+          <span class="wordmark-mark">◈</span>
+          <span>BLACKSITE<br /><b>ARCHIVE</b></span>
+        </a>
+        <div class="header-status"><span class="signal-dot"></span> RESISTANCE CHANNEL // ACTIVE</div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">MENU <span>+</span></button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          {nav.map((item) => <a class:list={{ active: active === item.label }} href={`${base}${item.href === '/' ? '' : item.href.slice(1)}`}>{item.label}</a>)}
+        </nav>
+      </header>
+      <main><slot /></main>
+      <footer class="site-footer">
+        <div><span class="footer-mark">◈</span> BLACKSITE ARCHIVE</div>
+        <div class="footer-note">UNLICENSED / UNOFFICIAL / UNREASONABLY WELL-DOCUMENTED</div>
+        <div class="footer-code">DOD 01—06 · <span>NO IMPERIAL ACCESS</span></div>
+      </footer>
+    </div>
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.site-nav');
+      toggle?.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        nav?.classList.toggle('open', !open);
+      });
+    </script>
+  </body>
+</html>
