@@ -49,7 +49,7 @@ const carouselCrew = [crew[crew.length - 1], ...crew, crew[0]];
       if (!button) return;
       const track = document.getElementById(button.dataset.carousel);
       if (!track) return;
-      track.scrollBy({ left: button.classList.contains('next') ? track.clientWidth * .72 : -track.clientWidth * .72, behavior: 'smooth' });
+      track.scrollBy({ left: button.classList.contains('next') ? track.clientWidth * .72 : -track.clientWidth * .72, behavior: 'auto' });
     });
     document.querySelectorAll('.bio-toggle').forEach((button) => button.addEventListener('click', () => {
       const card = button.closest('.crew-card');

@@ -45,7 +45,7 @@ const carouselShips = [ships[ships.length - 1], ships[0], ships[1], ships[2], sh
       if (!button) return;
       const target = document.getElementById(button.dataset.carousel);
       if (!target) return;
-      target.scrollBy({ left: button.classList.contains('next') ? target.clientWidth * .72 : -target.clientWidth * .72, behavior: 'smooth' });
+      target.scrollBy({ left: button.classList.contains('next') ? target.clientWidth * .72 : -target.clientWidth * .72, behavior: 'auto' });
     });
   </script>
 </Layout>
