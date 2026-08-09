@@ -2,8 +2,52 @@
 import Layout from '../../layouts/Layout.astro';
 import '../../styles/global.css';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const propulsion = [
+  ['Hyperspeed', '2'], ['Sublight speed', '75 MGLT'], ['Max speed', '750 km/h'], ['Manoeuvrability', '6'],
+];
+const structure = [
+  ['Weight', '14 T'], ['Volume', '250 m³'], ['Length', '15 m'], ['Party slot', '1.00'],
+];
+const combat = [
+  ['Combat role', 'Superiority'], ['Heavy lasers', '2'], ['Hull', '25'], ['Deflectors', '0'],
+  ['Ionic capacity', '15'], ['Armour', '20'], ['Sensors', '1'], ['ECM', '0'],
+];
+const materials = [
+  ['Quantum', '7'], ['Meleenium', '75'], ['Ardanium', '12'], ['Rudic', '32'], ['Rockivory', '11'],
+  ['Tibannagas', '4'], ['Varmigio', '14'], ['Lommite', '8'], ['Durelium', '5'],
+];
 ---
-<Layout title="Cloakshape Fighter" active="Hangar">
-  <section class="detail-hero"><div class="page-wrap detail-grid"><div class="detail-copy"><p class="kicker">Hangar file 03 // provenance sealed</p><h1>Cloakshape<br />fighter</h1><p class="lede">We acquired it from someone. Morkk flies it when a situation needs to become more direct. The records are incomplete. The scorch marks are not.</p><div class="stamp">CLOAKSHAPE FIGHTER<br />STATUS: HOT / FAST / IMPOLITE<br />PILOT: MORKK, USUALLY<br />OWNERSHIP: A CONVERSATION FOR ANOTHER DAY</div></div><img class="detail-image" src={`${base}media/corridor_breach.jpg`} alt="A dimly lit ship corridor under breach conditions" /></div></section>
-  <section class="section"><div class="page-wrap detail-grid"><div><p class="kicker">Flight notes</p><h2>For when subtlety<br />has already failed.</h2><p class="lede" style="margin-top:24px">The Cloakshape is a knife with an engine. It does not carry the crew, the cargo, or the emotional burden of a proper starship. It carries Morkk towards the problem at speed, which has proved useful.</p><div class="spec-table"><div class="spec-row"><span>Primary use</span><strong>Rapid intercept / close support</strong></div><div class="spec-row"><span>Preferred pilot</span><strong>Morkk the Guiltless Predator</strong></div><div class="spec-row"><span>Passenger comfort</span><strong>Not the point</strong></div><div class="spec-row"><span>Acquisition log</span><strong>Redacted by someone who can fly</strong></div></div></div><div class="plate about-card"><p class="kicker">Pilot note</p><h3>“It goes where I point it.”</h3><p style="margin-top:20px">Morkk’s flight philosophy is direct. The rest of us prefer a return vector. The Cloakshape has one, although not always when we need it.</p></div></div></section>
+<Layout title="Cloakshape/H" active="Hangar">
+  <section class="detail-hero cloakshape-hero">
+    <div class="page-wrap detail-grid">
+      <div class="detail-copy">
+        <p class="kicker">Hangar file 03 // hyperdrive capable</p>
+        <h1>Cloakshape<br /><em>/H</em></h1>
+        <p class="lede">A cheap, hyperdrive-capable personal fighter built for courier work, reconnaissance, patrols, and the moment a transport needs someone loud enough to buy it time.</p>
+        <div class="stamp">CLOAKSHAPE/H<br />ROLE: SUPERIORITY FIGHTER<br />STATUS: ACTIVE / MODIFIABLE<br />PILOT: MORKK, USUALLY<br />PASSENGERS: 1 + PILOT</div>
+      </div>
+      <figure class="detail-visual"><img class="detail-image" src={`${base}media/ships/cloakshape/large.png`} alt="Weathered blue-gray and off-white Cloakshape/H fighter" /><figcaption>Reference profile // twin tail fins, broad swept wings, forward cockpit</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section"><div class="page-wrap">
+    <div class="section-head"><div><p class="kicker">Flight notes</p><h2>Small frame.<br />Galaxy-sized range.</h2></div><p>The original Cloakshape was tied to a single sector. The /H variant adds a hyperdrive without losing the blunt, easily modified character that made the design useful in the first place.</p></div>
+    <div class="about-grid cloakshape-note-grid"><div class="plate about-card"><p class="kicker">Field profile</p><h3>Personal transport with teeth.</h3><p>The Cloakshape/H carries one passenger and no meaningful cargo. That makes it a poor freighter and an excellent courier, scout, patrol craft, or freelance escort.</p><p>It is not heavily armed, but its two heavy lasers can still make an attacker reconsider its priorities. Most crews treat the common tail maneuvering fin as original equipment; it is, in fact, the galaxy's most successful unofficial upgrade.</p></div><div class="plate about-card"><p class="kicker">Crew note</p><h3>“It goes where I point it.”</h3><p>Morkk prefers the version with the fin. He calls it handling. Everyone else calls it the reason the landing gear has opinions.</p></div></div>
+  </div></section>
+
+  <section class="section"><div class="page-wrap"><p class="kicker">Technical register</p><div class="spec-panels">
+    <div class="plate spec-panel"><h3>Propulsion</h3><div class="spec-table">{propulsion.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}</div></div>
+    <div class="plate spec-panel"><h3>Dimensions</h3><div class="spec-table">{structure.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}</div></div>
+    <div class="plate spec-panel"><h3>Combat systems</h3><div class="spec-table">{combat.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}</div></div>
+  </div></div></section>
+
+  <section class="section"><div class="page-wrap detail-grid lower-register">
+    <div><p class="kicker">Capacity & production</p><h2>Minimal payload.<br />Minimal excuses.</h2><div class="spec-table"><div class="spec-row"><span>Cargo capacity</span><strong>0 kg / 0 m³</strong></div><div class="spec-row"><span>Max passengers</span><strong>1</strong></div><div class="spec-row"><span>Raw value</span><strong>47,278 CR</strong></div><div class="spec-row"><span>Recommended workers</span><strong>6</strong></div><div class="spec-row"><span>Recycling XP</span><strong>20 XP</strong></div><div class="spec-row"><span>Production</span><strong>150 mod // 2× time factor</strong></div></div></div>
+    <div class="plate about-card"><p class="kicker">Raw materials</p><h3>Build sheet</h3><div class="material-list">{materials.map(([material, quantity]) => <div><span>{material}</span><strong>{quantity}</strong></div>)}</div></div>
+  </div></section>
+
+  <section class="section"><div class="page-wrap"><div class="section-head"><div><p class="kicker">Deck plan // base</p><h2>One floor.<br />One cockpit.</h2></div><p>Landing capacity and repulsors are fitted. The interior is correspondingly direct: cockpit, entrance/exit, and very little room for anyone to pretend this is a luxury vessel.</p></div><div class="deck-gallery"><figure class="plate"><img src={`${base}media/ships/cloakshape/cockpit.gif`} alt="Cloakshape/H cockpit and entrance overlay" /><figcaption>Cockpit // entrance / exit overlay</figcaption></figure><figure class="plate"><img src={`${base}media/ships/cloakshape/large.png`} alt="Cloakshape/H exterior reference" /><figcaption>Exterior reference // landing capacity / repulsor-equipped</figcaption></figure></div></div></section>
+
+  <section class="section"><div class="page-wrap"><div class="plate about-card related-skills"><p class="kicker">Related skills</p><div class="skill-tags"><span>Fighter/Freighter Piloting</span><span>Fighter/Freighter Combat</span><span>Space Command</span></div></div></div></section>
 </Layout>
