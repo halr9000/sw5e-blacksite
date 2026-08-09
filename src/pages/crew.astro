@@ -2,25 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const crew = [
-  ['T’zel', 'ECHANI MONK', 'T', 'Quiet hands. Quieter judgement.', 'Echani monk. Reads a room by watching who reaches for a weapon first.'],
-  ['Dax Throne', 'HUMAN SCOUT / SMUGGLER', 'DX', 'Honey in the voice. Static in the wake.', 'Honey-tongued raconteur, opportunist, and pilot of suspicious confidence. Has the hots for Sirona O’Keefe.'],
-  ['Deech Zhetriss', 'RODIAN JEDI SENTINEL', 'DZ', 'Meditation is not an excuse to miss a briefing.', 'Rodian Jedi sentinel. Maintains the archive, the ship, and an increasingly defensive position on all three.'],
-  ['Morkk the Guiltless Predator', 'TOGORIAN FIGHTER', 'MK', 'Likes the Cloakshape when things get spicy.', 'Togorian fighter. The title is self-appointed. The evidence is inconclusive.'],
-  ['DV-8', 'HUMANOID DROID ENGINEER', 'DV', 'The only one who reads the service manuals.', 'Humanoid droid engineer. Keeps the fleet operational and the organics at a manageable distance.'],
-  ['DV-US', 'SMALL WHEELED DROID / DECEASED', 'D-', 'Gone but still listed in the maintenance queue.', 'Companion unit to DV-8. Deceased in the line of duty. The memorial has not been approved.'],
-  ['DV-Rangoon', 'LARGE CLAW-LIKE DROID', 'DR', 'Current sidekick. Unclear supervision model.', 'Large claw-like droid and current sidekick to DV-8. Excellent grip. Troubling enthusiasm.'],
-  ['Maurice', 'GUNGAN ENGINEER / ARMORTECH', 'MO', 'Makes the hull tougher. Makes the room louder.', 'Gungan engineer armortech. Has improved the armour and the volume of every opinion.'],
+  ['T’zel', 'ECHANI MONK', 'T', 'Quiet hands. Quieter judgement.', 'Echani monk. Notices who reaches for a weapon first.'],
+  ['Dax Throne', 'HUMAN SCOUT / SMUGGLER', 'DX', 'Honey in the voice. Static in the wake.', 'Honey-tongued raconteur, scout, smuggler, and pilot of suspicious confidence. Has the hots for Sirona O’Keefe.'],
+  ['Deech Zhetriss', 'RODIAN JEDI SENTINEL', 'DZ', 'Meditation is not an excuse to miss a briefing.', 'Rodian Jedi sentinel. Keeps the archive, the ship, and his opinions in order.'],
+  ['Morkk the Guiltless Predator', 'TOGORIAN FIGHTER', 'MK', 'Likes the Cloakshape when things get spicy.', 'Togorian fighter. The title is self-appointed. No one has successfully challenged it.'],
+  ['DV-8', 'HUMANOID DROID ENGINEER', 'DV', 'The only one who reads the service manuals.', 'Humanoid droid engineer. Keeps the fleet running and the organics within acceptable tolerances.'],
+  ['DV-US', 'SMALL WHEELED DROID / DECEASED', 'D-', 'Gone but still listed in the maintenance queue.', 'Companion unit to DV-8. Deceased in the line of duty. The memorial request remains under review.'],
+  ['DV-Rangoon', 'LARGE CLAW-LIKE DROID', 'DR', 'Current sidekick. Unclear supervision model.', 'Large claw-like droid and current sidekick to DV-8. Strong grip. Questionable initiative.'],
+  ['Maurice', 'GUNGAN ENGINEER / ARMORTECH', 'MO', 'Makes the hull tougher. Makes the room louder.', 'Gungan engineer armortech. The hull is tougher. The arguments are louder.'],
   ['Borís', 'GUNGAN SNIPER OPERATIVE', 'BO', 'Already has the angle.', 'Gungan sniper operative. Quiet until the shot is taken, then quieter still.'],
-  ['Stalker', 'CATHAR OPERATIVE / PAST COMPATRIOT', 'ST', 'No longer aboard. Still counted.', 'Cathar operative and past compatriot. The archive retains the name, the scars, and no further comment.'],
+  ['Stalker', 'CATHAR OPERATIVE / PAST COMPATRIOT', 'ST', 'No longer aboard. Still counted.', 'Cathar operative and past compatriot. The file remains open, though the bunk does not.'],
 ];
 const carouselCrew = [crew[crew.length - 1], ...crew, crew[0]];
 ---
 <Layout title="Crew Roster" active="Crew Roster">
-  <section class="detail-hero"><div class="page-wrap"><p class="kicker">Personnel manifest // click a record to unseal</p><h1>Crew roster</h1><p class="lede" style="margin-top:24px">A capable, volatile, and occasionally deceased group of beings entrusted with the continued operation of three stolen vessels.</p></div></section>
+  <section class="detail-hero"><div class="page-wrap"><p class="kicker">Personnel manifest // click a record to unseal</p><h1>Crew roster</h1><p class="lede" style="margin-top:24px">A volatile roster entrusted with three ships, a resistance cell, and one another.</p></div></section>
   <section class="section"><div class="page-wrap"><div class="carousel-shell"><button class="carousel-control prev" data-carousel="crew-track" aria-label="Previous crew member">←</button><div id="crew-track" class="carousel-track">
     {carouselCrew.map(([name, role, initials, tagline, bio], index) => <article class:list={['plate', 'crew-card', index === 1 ? 'is-active' : '']}><div class="crew-portrait"><span class="crew-initials">{initials}</span></div><div class="crew-info"><span class="rank">{role}</span><h3>{name}</h3><p class="species">{tagline}</p><p class="bio-copy">Placeholder portrait pending a cooperative photographer.</p><button class="bio-toggle" type="button">UNSEAL BIO +</button><div class="bio">{bio}</div></div></article>)}
   </div><button class="carousel-control next" data-carousel="crew-track" aria-label="Next crew member">→</button></div></div></section>
-  <section class="section"><div class="page-wrap"><div class="quote-panel"><div><p class="kicker">Roster note</p><p class="mono text-muted">STATUS: NOMINAL</p></div><div><blockquote>“If everyone is still breathing, it counts as a successful shift.”</blockquote><cite>— DV-8, refusing to define “everyone”</cite></div></div></div></section>
+  <section class="section"><div class="page-wrap"><div class="quote-panel"><div><p class="kicker">Roster note</p><p class="mono text-muted">STATUS: STILL BREATHING</p></div><div><blockquote>“If everyone is still breathing, it counts as a successful shift.”</blockquote><cite>— DV-8, refusing to define “everyone”</cite></div></div></div></section>
   <script>
     const updateActive = (track) => {
       const centre = track.scrollLeft + (track.clientWidth / 2);
