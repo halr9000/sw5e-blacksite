@@ -4,15 +4,15 @@ import '../../styles/global.css';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 const ships = [
   { name: 'Glorious Chariot', status: 'ACQUIRED / HUTT PROPERTY', image: '/images/glorious-chariot.png', text: 'A luxury 3000-class space yacht customised for Darga the Hutt. Darga is dead. The yacht is not.', href: '/hangar/glorious-chariot/' },
-  { name: 'The Banshee', status: 'BORROWED / SIRONA O’KEEFE', image: '/media/ship_galley.jpg', text: 'Primary mobile base of operations, provided by a smuggler with better judgement than her passengers.', href: '/hangar/banshee/' },
+  { name: 'The Banshee', status: 'BORROWED / SIRONA O’KEEFE', image: '/media/ships/banshee/deck-plan.png', text: 'A modified Baudo-class star yacht: mobile base, free trader, and the crew’s most defensible bad decision.', href: '/hangar/banshee/' },
   { name: 'Cloakshape/H', status: 'ACQUIRED / PROVENANCE UNCLEAR', image: '/media/ships/cloakshape/large.png', text: 'A hyperdrive-capable personal fighter: cheap, fast, armed, and ideal for courier work or making a distraction.', href: '/hangar/cloakshape/' },
 ];
-const carouselShips = [ships[ships.length - 1], ships[0], ships[1], ships[2], ships[0]];
+const carouselShips = ships;
 ---
 <Layout title="Hangar" active="Hangar">
   <section class="detail-hero"><div class="page-wrap"><p class="kicker">Fleet register // all acquisitions final</p><h1>The hangar</h1><p class="lede" style="margin-top:24px">Three vessels. One clearly documented owner. The other two have better stories.</p></div></section>
   <section class="section"><div class="page-wrap"><div class="carousel-shell"><button class="carousel-control prev" data-carousel="hangar-track" aria-label="Previous vessel">←</button><div id="hangar-track" class="carousel-track">
-    {carouselShips.map((ship, i) => <article class:list={['plate', 'ship-card', i === 1 ? 'is-active' : '']}><div class="ship-image"><img src={`${base}${ship.image.slice(1)}`} alt={ship.name} /></div><div class="ship-copy"><span class="ship-status">{ship.status}</span><h3>{ship.name}</h3><p>{ship.text}</p><a class="button secondary" href={`${base}${ship.href.slice(1)}`} style="margin-top:20px">Open vessel file →</a></div></article>)}
+    {carouselShips.map((ship, i) => <article class:list={['plate', 'ship-card', i === 0 ? 'is-active' : '']}><div class="ship-image"><img src={`${base}${ship.image.slice(1)}`} alt={ship.name} /></div><div class="ship-copy"><span class="ship-status">{ship.status}</span><h3>{ship.name}</h3><p>{ship.text}</p><a class="button secondary" href={`${base}${ship.href.slice(1)}`} style="margin-top:20px">Open vessel file →</a></div></article>)}
   </div><button class="carousel-control next" data-carousel="hangar-track" aria-label="Next vessel">→</button></div></div></section>
   <section class="section"><div class="page-wrap"><div class="section-head"><div><p class="kicker">Fleet doctrine</p><h2>Show them the whip.</h2></div><p>The Empire has Star Destroyers. We have three vessels and three different explanations for the missing paperwork.</p></div><div class="stats"><div class="stat"><strong>01</strong><span>Large luxury yacht</span></div><div class="stat"><strong>01</strong><span>Mobile base of operations</span></div><div class="stat"><strong>01</strong><span>Spicy interceptor</span></div><div class="stat"><strong>∞</strong><span>Maintenance opinions</span></div></div></div></section>
   <script>
@@ -31,7 +31,7 @@ const carouselShips = [ships[ships.length - 1], ships[0], ships[1], ships[2], sh
     const track = document.querySelector('#hangar-track');
     const centreInitial = () => {
       if (!track) return;
-      const target = track.querySelectorAll('.ship-card')[1] || track.querySelector('.ship-card');
+      const target = track.querySelector('.ship-card');
       if (target) track.scrollLeft = target.offsetLeft - ((track.clientWidth - target.offsetWidth) / 2);
       updateActive(track);
     };
@@ -40,12 +40,26 @@ const carouselShips = [ships[ships.length - 1], ships[0], ships[1], ships[2], sh
       window.addEventListener('load', centreInitial, { once: true });
       window.requestAnimationFrame(() => window.requestAnimationFrame(centreInitial));
     }
+    const centreCard = (target, card) => {
+      target.scrollTo({ left: card.offsetLeft - ((target.clientWidth - card.offsetWidth) / 2), behavior: 'smooth' });
+    };
+    const navigate = (target, direction) => {
+      const cards = [...target.querySelectorAll('.ship-card')];
+      const activeIndex = cards.indexOf(target.querySelector('.is-active'));
+      if (activeIndex < 0) return;
+      const nextIndex = (activeIndex + direction + cards.length) % cards.length;
+      centreCard(target, cards[nextIndex]);
+    };
     document.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-carousel]');
-      if (!button) return;
-      const target = document.getElementById(button.dataset.carousel);
-      if (!target) return;
-      target.scrollBy({ left: button.classList.contains('next') ? target.clientWidth * .72 : -target.clientWidth * .72, behavior: 'auto' });
+      const control = event.target.closest('[data-carousel]');
+      const card = event.target.closest('.carousel-track .ship-card');
+      if (control) {
+        const target = document.getElementById(control.dataset.carousel);
+        if (!target) return;
+        navigate(target, control.classList.contains('next') ? 1 : -1);
+      } else if (card && !card.classList.contains('is-active')) {
+        centreCard(card.closest('.carousel-track'), card);
+      }
     });
   </script>
 </Layout>

@@ -14,12 +14,12 @@ const crew = [
   { name: 'Borís', role: 'GUNGAN SNIPER OPERATIVE', initials: 'BO', tagline: 'Already has the angle.', bio: 'Gungan sniper operative. Quiet until the shot is taken, then quieter still.', portrait: 'media/crew/boris.png' },
   { name: 'Stalker', role: 'CATHAR OPERATIVE / PAST COMPATRIOT', initials: 'ST', tagline: 'No longer aboard. Still counted.', bio: 'Cathar operative and past compatriot. The file remains open, though the bunk does not.', portrait: null },
 ];
-const carouselCrew = [crew[crew.length - 1], ...crew, crew[0]];
+const carouselCrew = crew;
 ---
 <Layout title="Crew Roster" active="Crew Roster">
   <section class="detail-hero"><div class="page-wrap"><p class="kicker">Personnel manifest // click a record to unseal</p><h1>Crew roster</h1><p class="lede" style="margin-top:24px">A volatile roster entrusted with three ships, a resistance cell, and one another.</p></div></section>
   <section class="section"><div class="page-wrap"><div class="carousel-shell"><button class="carousel-control prev" data-carousel="crew-track" aria-label="Previous crew member">←</button><div id="crew-track" class="carousel-track">
-    {carouselCrew.map(({ name, role, initials, tagline, bio, portrait }, index) => <article class:list={['plate', 'crew-card', index === 1 ? 'is-active' : '']}><div class:list={['crew-portrait', portrait ? 'has-image' : '']} >{portrait ? <img src={`${base}${portrait}`} alt={`${name} portrait`} /> : <span class="crew-initials">{initials}</span>}</div><div class="crew-info"><span class="rank">{role}</span><h3>{name}</h3><p class="species">{tagline}</p>{portrait ? <p class="bio-copy">Portrait supplied by the crew.</p> : <p class="bio-copy">Portrait pending a cooperative photographer.</p>}<button class="bio-toggle" type="button">UNSEAL BIO +</button><div class="bio">{bio}</div></div></article>)}
+    {carouselCrew.map(({ name, role, initials, tagline, bio, portrait }, index) => <article class:list={['plate', 'crew-card', index === 0 ? 'is-active' : '']}><div class:list={['crew-portrait', portrait ? 'has-image' : '']} >{portrait ? <img src={`${base}${portrait}`} alt={`${name} portrait`} /> : <span class="crew-initials">{initials}</span>}</div><div class="crew-info"><span class="rank">{role}</span><h3>{name}</h3><p class="species">{tagline}</p><p class="bio-copy">{portrait ? 'Portrait supplied by the crew.' : 'Portrait withheld. The file still checks out.'}</p><button class="bio-toggle" type="button">UNSEAL BIO +</button><div class="bio">{bio}</div></div></article>)}
   </div><button class="carousel-control next" data-carousel="crew-track" aria-label="Next crew member">→</button></div></div></section>
   <section class="section"><div class="page-wrap"><div class="quote-panel"><div><p class="kicker">Roster note</p><p class="mono text-muted">STATUS: STILL BREATHING</p></div><div><blockquote>“If everyone is still breathing, it counts as a successful shift.”</blockquote><cite>— DV-8, refusing to define “everyone”</cite></div></div></div></section>
   <script>
@@ -37,7 +37,7 @@ const carouselCrew = [crew[crew.length - 1], ...crew, crew[0]];
     };
     document.querySelectorAll('.carousel-track').forEach((track) => {
       const centreInitial = () => {
-        const target = track.querySelectorAll('.crew-card, .ship-card')[1] || track.querySelector('.crew-card, .ship-card');
+        const target = track.querySelector('.crew-card, .ship-card');
         if (target) track.scrollLeft = target.offsetLeft - ((track.clientWidth - target.offsetWidth) / 2);
         updateActive(track);
       };
@@ -45,12 +45,26 @@ const carouselCrew = [crew[crew.length - 1], ...crew, crew[0]];
       window.addEventListener('load', centreInitial, { once: true });
       window.requestAnimationFrame(() => window.requestAnimationFrame(centreInitial));
     });
+    const centreCard = (track, card) => {
+      track.scrollTo({ left: card.offsetLeft - ((track.clientWidth - card.offsetWidth) / 2), behavior: 'smooth' });
+    };
+    const navigate = (track, direction) => {
+      const cards = [...track.querySelectorAll('.crew-card')];
+      const activeIndex = cards.indexOf(track.querySelector('.is-active'));
+      if (activeIndex < 0) return;
+      const nextIndex = (activeIndex + direction + cards.length) % cards.length;
+      centreCard(track, cards[nextIndex]);
+    };
     document.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-carousel]');
-      if (!button) return;
-      const track = document.getElementById(button.dataset.carousel);
-      if (!track) return;
-      track.scrollBy({ left: button.classList.contains('next') ? track.clientWidth * .72 : -track.clientWidth * .72, behavior: 'auto' });
+      const control = event.target.closest('[data-carousel]');
+      const card = event.target.closest('.carousel-track .crew-card');
+      if (control) {
+        const track = document.getElementById(control.dataset.carousel);
+        if (!track) return;
+        navigate(track, control.classList.contains('next') ? 1 : -1);
+      } else if (card && !card.classList.contains('is-active') && !event.target.closest('button, a')) {
+        centreCard(card.closest('.carousel-track'), card);
+      }
     });
     document.querySelectorAll('.bio-toggle').forEach((button) => button.addEventListener('click', () => {
       const card = button.closest('.crew-card');
