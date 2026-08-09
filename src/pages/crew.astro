@@ -44,11 +44,13 @@ const carouselCrew = [crew[crew.length - 1], ...crew, crew[0]];
       window.addEventListener('load', centreInitial, { once: true });
       window.requestAnimationFrame(() => window.requestAnimationFrame(centreInitial));
     });
-    document.querySelectorAll('[data-carousel]').forEach((button) => button.addEventListener('click', () => {
+    document.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-carousel]');
+      if (!button) return;
       const track = document.getElementById(button.dataset.carousel);
-      const amount = track.clientWidth * 0.72;
-      track.scrollBy({ left: button.classList.contains('next') ? amount : -amount, behavior: 'smooth' });
-    }));
+      if (!track) return;
+      track.scrollBy({ left: button.classList.contains('next') ? track.clientWidth * .72 : -track.clientWidth * .72, behavior: 'smooth' });
+    });
     document.querySelectorAll('.bio-toggle').forEach((button) => button.addEventListener('click', () => {
       const card = button.closest('.crew-card');
       const revealed = card.classList.toggle('revealed');
