@@ -4,7 +4,7 @@
 
 Generate the crew roster from Foundry VTT actor exports instead of a hand-maintained array in
 `crew.astro`. Mechanics come from the exports; personality stays hand-written. Each crew member
-gains a dossier page at `/crew/<slug>`, and the existing carousel gains a derived stat line.
+gains a dossier page at `/crew/<slug>`, linked from the existing carousel.
 
 ## Findings that shape the design
 
@@ -67,12 +67,15 @@ Extracted per actor:
 | `background` | name of the item with `type: "background"` |
 | `classes` | `[{ name, levels }]` for each item with `type: "class"` |
 | `subclasses` | names of items with `type: "subclass"` |
-| `totalLevel` | sum of `classes[].levels` |
 | `size` | `system.traits.size`, expanded via lookup |
 | `abilities` | `system.abilities.<key>.value` for the six abilities |
 | `skills` | `system.skills` entries with `value > 0`, as `{ name, expertise }` |
 
 Nothing else. No HTML, no inventory, no formula evaluation, no dice math.
+
+**Levels are extracted but never rendered.** The whole crew levels together, so a number on the
+page says nothing about the character. `classes[].levels` is retained solely to identify the
+primary class should anyone multiclass; no page displays it and no total is computed.
 
 Two lookup tables are hardcoded, both stable across SW5e releases: the eighteen skill codes
 (the fifteen conventional ones plus `lor` Lore, `pil` Piloting, `tec` Technology) and the six size
@@ -91,7 +94,6 @@ in Foundry therefore does not break the link.
     "size": "Medium",
     "classes": [{ "name": "Monk", "levels": 11 }],
     "subclasses": ["Echani Order"],
-    "totalLevel": 11,
     "abilities": { "str": 10, "dex": 18, "con": 14, "int": 11, "wis": 16, "cha": 10 },
     "skills": [{ "name": "Acrobatics", "expertise": false }]
   }
@@ -111,6 +113,7 @@ Zod-validated in `src/content.config.ts`. The filename is the URL slug.
 ---
 export: "fvtt-Actor-t'zel-nloZyUHeyUKNuQDw.json"
 displayName: T’zel
+role: ECHANI MONK
 initials: T
 tagline: Quiet hands. Quieter judgement.
 portrait: media/crew/t-zel.png
@@ -129,7 +132,7 @@ Schema:
 | `displayName` | yes | Wins over `sourceName`; preserves typography such as `T’zel` and `Borís`. |
 | `initials` | yes | Fallback plate when `portrait` is absent. |
 | `tagline` | yes | One line, shown on the card and the dossier. |
-| `role` | no | Defaults to a derived `ECHANI · MONK 11`. |
+| `role` | no | Hand-written and expected; falls back to a derived `ECHANI · MONK`. |
 | `portrait` | no | Path under `public/`, base-prefixed at render. |
 | `languages` | no | Hand-written. The exports are not a usable source. |
 | `status` | yes | `active`, `former`, or `deceased`. |
@@ -145,10 +148,18 @@ The Markdown body is the bio prose. Every field currently inline in the `crew` a
 `{ slug, displayName, role, initials, tagline, portrait, languages, status, body, sheet }`,
 where `sheet` is `null` for flavor-only members.
 
-`role` is derived when the overlay omits it, in two forms. The short form — species, primary class,
-total level, uppercased, as `RODIAN · SENTINEL 12` — is used on the carousel card, where space is
-tight. The long form appends the subclass, as `RODIAN · SENTINEL 12 · PATH OF THE FORCEBLADE`, and
-is used on the dossier. An explicit `role` in the overlay replaces both.
+**`role` is expected to be hand-written.** The existing roster copy already carries roles with more
+character than any derivation would produce — `HUMAN SCOUT / SMUGGLER`, `SMALL WHEELED DROID /
+DECEASED` — and those carry over verbatim into the overlay files. The overlay's `role` is the
+normal path, not an override.
+
+The derived fallback exists for a member whose overlay omits it: species and primary class,
+uppercased, as `RODIAN · SENTINEL`.
+
+The dossier appends the subclass to whichever form is in play — `ECHANI MONK · ECHANI ORDER`,
+`HUMAN SCOUT / SMUGGLER · TELEPORTATION TECHNIQUE` — since the subclass is genuinely
+characterizing where a level number is not. The carousel card shows the role alone. No level
+appears anywhere.
 
 The layer emits a build-time console warning in both mismatch directions: an overlay naming an
 export that does not exist, and an export that no overlay references. Warnings, not errors, so a
@@ -157,16 +168,15 @@ freshly dropped export never blocks a build.
 ## Component: the pages
 
 **`src/pages/crew/index.astro`.** The existing carousel, its circular navigation, and the
-UNSEAL BIO toggle are unchanged. Each card gains a derived stat line beneath the name
-(`RODIAN · SENTINEL 12`) and an `OPEN FILE →` link to the dossier. Cards for flavor-only members
-omit the stat line.
+UNSEAL BIO toggle are unchanged. Each card keeps its hand-written role line and gains an
+`OPEN FILE →` link to the dossier.
 
 **`src/pages/crew/[slug].astro`.** `getStaticPaths()` from the merge layer, so a page exists as
 soon as an overlay file does.
 
 ```
 [portrait]   T’ZEL
-             ECHANI · MONK 11 · ECHANI ORDER
+             ECHANI MONK · ECHANI ORDER
              "Quiet hands. Quieter judgement."
 
              Background  Bounty Hunter      Size  Medium
@@ -221,15 +231,13 @@ supplied directly.
 | T'zel | Basic, Huttese, Binary | author, plus `binary` from export |
 | Morkk | Basic, Huttese, Togorese | export, faithful |
 | DV-Rangoon | Basic, Binary, Bothese, Ewokese, Jawaese, Twi'leki | export, faithful |
+| DV-8 | Basic, Binary, Tusken, Huttese | author |
 | Kreia | Basic, Miralukese, Sith, Zabraki | export, plus inferred Basic |
 | Maurice | Basic, Gunganese, Huttese | export, plus inferred Basic |
-| DV-8 | Basic, Binary, Tusken | export records only Tusken |
 
 Rows marked faithful are the export's `languages.value` expanded to display form, where the SW5e
-key `common` maps to `Basic`. Rows marked inferred add `Basic` where the export omitted it, which
-is safe for a crew that operates together. **DV-8's row is the weakest**: the export records only
-Tusken, and both Basic and Binary are inferred from the character being a droid on this crew. It
-should be confirmed before publication.
+key `common` maps to `Basic`. The two inferred rows add `Basic` where the export omitted it, which
+is safe for a crew that operates together; nothing else is invented.
 
 `Binary` is retained for T'zel because the export records it and the author's note read as
 additive. The export vocabulary spells the Gungan language `gungan`; display spelling is
@@ -241,7 +249,7 @@ Adds `data/actors/`, `scripts/build-roster.mjs`, `scripts/build-roster.test.mjs`
 `src/data/roster.json`, `src/content/crew/`, `src/content.config.ts`, `src/lib/roster.js`,
 `src/pages/crew/[slug].astro`, and `public/media/crew/kreia.png`. Moves `src/pages/crew.astro` to
 `src/pages/crew/index.astro`. Extends `src/styles/global.css` with dossier styles and
-`package.json` with the `roster` script.
+`package.json` with the `roster` and `test` scripts.
 
 Does not touch the hangar, travelogue, about, gm, or index pages, the shared layout, the carousel
 behavior, or any existing page copy other than the roster array being relocated into overlay files.
@@ -269,4 +277,5 @@ serve as fixtures; they are real data and they do not move.
   languages row.
 - Built HTML for `/crew/stalker` renders without a stat strip and without errors.
 - `/crew/kreia` renders with the downloaded portrait.
+- No class level number appears in any built page.
 - The build log lists no unmatched exports.
