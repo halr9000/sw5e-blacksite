@@ -104,7 +104,7 @@ p { margin: 0; }
 .stat span { display: block; margin-top: 7px; color: var(--muted); font: 11px var(--font-mono); text-transform: uppercase; }
 
 .travel-grid { display: grid; grid-template-columns: repeat(12, minmax(0,1fr)); gap: 20px; }
-.travel-card { grid-column: span 4; overflow: hidden; }
+.travel-card { grid-column: span 4; overflow: hidden; scroll-margin-top: 92px; }
 .travel-card:nth-child(2) { grid-column: span 5; }
 .travel-card:nth-child(3) { grid-column: span 3; }
 .travel-card:nth-child(4) { grid-column: span 7; }
