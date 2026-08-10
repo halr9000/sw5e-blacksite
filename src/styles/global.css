@@ -113,7 +113,10 @@ p { margin: 0; }
 .travel-card:nth-child(3) img { height: 250px; }
 .travel-body { padding: 20px; }
 .travel-tag { display: flex; justify-content: space-between; gap: 12px; color: var(--orange); font: 10px var(--font-mono); text-transform: uppercase; }
+.travel-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
 .travel-body h3 { margin-top: 17px; font-size: 28px; }
+.anchor-link { flex: 0 0 auto; margin-top: 17px; color: var(--muted); font: 18px/1 var(--font-body); opacity: .78; transition: color .18s var(--ease-out), opacity .18s var(--ease-out), transform .18s var(--ease-out); }
+.anchor-link:hover, .anchor-link:focus-visible { color: var(--orange); opacity: 1; transform: translateY(-1px); }
 .travel-body p { margin-top: 14px; color: var(--sand); font-size: 14px; }
 .travel-author { display: block; margin-top: 22px; color: var(--muted); font: 11px var(--font-mono); }
 
