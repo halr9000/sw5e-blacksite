@@ -528,7 +528,6 @@ displayName: Stalker
 role: CATHAR OPERATIVE / PAST COMPATRIOT
 initials: ST
 tagline: No longer aboard. Still counted.
-portrait:
 status: former
 order: 11
 ---
@@ -536,7 +535,11 @@ order: 11
 Cathar operative and past compatriot. The file remains open, though the bunk does not.
 ```
 
-Note on YAML: `t-zel.md`'s `export` value is quoted because it contains an apostrophe. `deech-zhetriss.md`'s `Bocce (passable)` needs no quoting — parentheses are not YAML syntax. The `portrait:` key in `stalker.md` is intentionally empty, which YAML reads as `null` and Zod accepts as absent.
+Notes on YAML:
+
+- `t-zel.md`'s `export` value is quoted because it contains an apostrophe.
+- `deech-zhetriss.md`'s `Bocce (passable)` needs no quoting — parentheses are not YAML syntax inside a flow sequence. Commas and brackets would need it; parentheses do not.
+- `stalker.md` and `dv-u5.md` omit optional keys entirely rather than leaving them blank. **A bare `portrait:` with no value parses as YAML `null`, and `z.string().optional()` rejects `null` — it accepts only `undefined`.** Omit the key.
 
 - [ ] **Step 3: Verify the collection parses**
 
@@ -564,7 +567,7 @@ git commit -m "feat: move crew flavor copy into overlay content collection"
 - Produces:
   - `deriveRole(sheet: Sheet|null) => string|null` — `'RODIAN · SENTINEL'`, no level
   - `dossierRole(role: string|null, sheet: Sheet|null) => string|null` — appends the subclass
-  - `mergeMembers(entries, roster, warn?) => Member[]` where `Member = { slug, displayName, role, initials, tagline, portrait, languages, status, order, sheet, entry }`, sorted by `order`
+  - `mergeMembers(entries, roster, warn?) => Member[]` where `Member = { slug, displayName, role, initials, tagline, portrait, languages, status, order, bio, sheet, entry }`, sorted by `order`. `bio` is the Markdown body trimmed to plain text, for the carousel card; `entry` is kept so the dossier can render the same body as formatted Markdown.
   - `getRoster() => Promise<Member[]>` (Astro-only wrapper)
 
 Splitting the pure merge out of the Astro glue is what makes this testable — `src/lib/roster.js` imports `astro:content`, which only resolves inside an Astro build.
@@ -589,7 +592,7 @@ const sheet = {
   skills: [{ name: 'Insight', expertise: false }],
 };
 
-const entry = (id, data) => ({ id, data: { languages: [], ...data } });
+const entry = (id, data, body = '') => ({ id, body, data: { languages: [], ...data } });
 
 test('deriveRole omits the level entirely', () => {
   const role = deriveRole(sheet);
@@ -631,6 +634,19 @@ test('members are joined to their sheet and sorted by order', () => {
   assert.deepEqual(members.map((m) => m.slug), ['a', 'b']);
   assert.equal(members[0].sheet, null);
   assert.equal(members[1].sheet, sheet);
+});
+
+test('bio is the markdown body as trimmed plain text', () => {
+  const [member] = mergeMembers(
+    [entry('deech', { order: 1 }, '\nRodian Jedi sentinel. Keeps the archive.\n')],
+    {},
+  );
+  assert.equal(member.bio, 'Rodian Jedi sentinel. Keeps the archive.');
+});
+
+test('bio is an empty string when the body is missing', () => {
+  const [member] = mergeMembers([{ id: 'bare', data: { languages: [], order: 1 } }], {});
+  assert.equal(member.bio, '');
 });
 
 test('an overlay naming a missing export warns and does not throw', () => {
@@ -697,6 +713,7 @@ export function mergeMembers(entries, roster, warn = console.warn) {
       languages: data.languages ?? [],
       status: data.status,
       order: data.order,
+      bio: (entry.body ?? '').trim(),
       sheet,
       entry,
     };
@@ -713,7 +730,7 @@ export function mergeMembers(entries, roster, warn = console.warn) {
 - [ ] **Step 4: Run the tests to verify they pass**
 
 Run: `npm test`
-Expected: PASS, 18 tests total across both files
+Expected: PASS, 20 tests total across both files
 
 - [ ] **Step 5: Write the Astro glue**
 
@@ -797,14 +814,14 @@ Replace the `{carouselCrew.map(...)}` expression (a single long line in the orig
           <button class="bio-toggle" type="button">UNSEAL BIO +</button>
           <a class="card-link" href={`${base}crew/${member.slug}/`}>OPEN FILE →</a>
         </div>
-        <div class="bio">{member.tagline}</div>
+        <div class="bio">{member.bio}</div>
       </div>
     </article>)}
 ```
 
 Note the reference to `carouselCrew` disappears with the array; delete the `const carouselCrew = crew;` line if it survived Step 2.
 
-The `.bio` panel now shows the tagline rather than the prose, because the prose has moved to the dossier and the card should not duplicate it. Everything else — the `<script>` block, the carousel classes, the quote panel — is untouched.
+The `.bio` panel shows the overlay's prose, exactly as the current page does — `member.bio` is the Markdown body as plain text, supplied by the merge layer in Task 3. It must not show the tagline: the tagline already renders in `.species` directly above, and an UNSEAL button that reveals text the reader can already see is not a reveal. Everything else — the `<script>` block, the carousel classes, the quote panel — is untouched.
 
 - [ ] **Step 4: Add the two new styles**
 
@@ -954,7 +971,7 @@ Append to `src/styles/global.css`, after the `.card-link:hover` rule added in Ta
 npm test && npm run build
 ```
 
-Expected: 18 tests pass; build succeeds; the log reports no `[roster]` warnings at all, since every export is now referenced by an overlay.
+Expected: 20 tests pass; build succeeds; the log reports no `[roster]` warnings at all, since every export is now referenced by an overlay.
 
 ```bash
 ls dist/crew/
