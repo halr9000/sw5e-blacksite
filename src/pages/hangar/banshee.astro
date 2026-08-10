@@ -2,8 +2,53 @@
 import Layout from '../../layouts/Layout.astro';
 import '../../styles/global.css';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const defenses = [
+  ['Reflex Defense', '13 (flat-footed 11)'], ['Fortitude Defense', '22'], ['Armor', '+11'],
+  ['Hit points', '60'], ['Damage reduction', '15'], ['Shield rating', '15'], ['Damage threshold', '72'],
+];
+const flight = [
+  ['Character-scale speed', 'Fly 12 squares'], ['Starship-scale speed', 'Fly 5 squares'],
+  ['Maximum velocity', '1,200 km/h'], ['Fighting space', '12×12 / 1 starship square'],
+  ['Grapple', '+32'], ['Base attack bonus', '+4'],
+];
+const systems = [
+  ['Light laser cannons, double', '+9 // 3d10×2 // Sirona'],
+  ['Laser cannons, quad', '+2 // 4d10×2 // gunner'],
+  ['Hyperdrive', 'Class 2 // backup Class 7'],
+  ['Navicomputer', 'Installed'],
+];
 ---
 <Layout title="The Banshee" active="Hangar">
-  <section class="detail-hero"><div class="page-wrap detail-grid"><div class="detail-copy"><p class="kicker">Hangar file 02 // not ours</p><h1>The<br />Banshee</h1><p class="lede">Sirona O’Keefe’s ship, and the reason we got off Sel Zonn Station. It is technically borrowed. We have made ourselves very useful aboard it.</p><div class="stamp">THE BANSHEE<br />STATUS: ACTIVE / O’KEEFE PROPERTY<br />ROLE: MOBILE BASE<br />PILOTING NOTE: DAX REMAINS NORMAL ABOUT THIS</div></div><img class="detail-image" src={`${base}media/ship_galley.jpg`} alt="The Banshee interior galley" /></div></section>
-  <section class="section"><div class="page-wrap detail-grid"><div><p class="kicker">Operational notes</p><h2>Not our ship.<br />Our problem.</h2><p class="lede" style="margin-top:24px">The Banshee is where plans get made, supplies get hidden, wounds get dressed, and Dax tries to act normal around Sirona O’Keefe. It is the dependable ship in the fleet, which is why we keep putting it in danger.</p><div class="spec-table"><div class="spec-row"><span>Owner</span><strong>Sirona O’Keefe</strong></div><div class="spec-row"><span>Role</span><strong>Rescue craft / mobile base / occasional escape route</strong></div><div class="spec-row"><span>Home</span><strong>Wherever the next job is</strong></div><div class="spec-row"><span>Reputation</span><strong>Better than ours</strong></div></div></div><div class="plate about-card"><p class="kicker">Bridge gossip</p><h3>“She’s cool.”</h3><p style="margin-top:20px">Dax has said this about Sirona approximately every time her name appears in a transmission. The Banshee remains a sound vessel under competent ownership. We are trying not to ruin that.</p></div></div></section>
+  <section class="detail-hero banshee-hero">
+    <div class="page-wrap detail-grid">
+      <div class="detail-copy">
+        <p class="kicker">Hangar file 02 // modified baudo-class star yacht</p>
+        <h1>The<br />Banshee</h1>
+        <p class="lede">Sirona O’Keefe’s free-trader transport: a fast, heavily modified mobile base with room for a crew, a cargo problem, and exactly enough firepower to make Imperial patrols reconsider.</p>
+        <div class="stamp">THE BANSHEE<br />STATUS: ACTIVE / O’KEEFE PROPERTY<br />ROLE: MOBILE BASE / FREE TRADER<br />CREW: 2 // PASSENGERS: 8<br />PILOT: SIRONA O’KEEFE // COPILOT: RX-13 “CRASH”</div>
+      </div>
+      <figure class="detail-visual"><img class="detail-image banshee-plan" src={`${base}media/ships/banshee/deck-plan.png`} alt="The Banshee star yacht with labeled deck plans, Sirona O’Keefe, and RX-13" /><figcaption>Reference composite // exterior profile, crew, and labeled interior plans</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section"><div class="page-wrap">
+    <div class="section-head"><div><p class="kicker">Operational notes</p><h2>Borrowed hull.<br />Permanent problem.</h2></div><p>The Banshee is where plans get made, supplies get hidden, wounds get dressed, and Dax tries to act normal around Sirona O’Keefe. It is the dependable ship in the fleet, which is why everyone keeps putting it in danger.</p></div>
+    <div class="about-grid"><div class="plate about-card"><p class="kicker">Command profile</p><h3>A good ship with a bad passenger list.</h3><p>Captain O’Keefe is fiercely loyal to Senator Organa and trusts the crew largely because he does. Her droid copilot, RX-13 “Crash,” prefers to gripe rather than perform his duties, but the pair keep the Banshee running smoothly.</p><p>The ship is treated as a Gargantuan starfighter when capital weapons, dogfighting, or starship maneuvers are involved.</p></div><div class="plate about-card"><p class="kicker">Bridge gossip</p><h3>“She’s cool.”</h3><p>Dax has said this about Sirona approximately every time her name appears in a transmission. The Banshee remains a sound vessel under competent ownership. We are trying not to ruin that.</p></div></div>
+  </div></section>
+
+  <section class="section"><div class="page-wrap"><p class="kicker">Technical register // CL 8</p><div class="spec-panels">
+    <div class="plate spec-panel"><h3>Defenses</h3><div class="spec-table">{defenses.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}</div></div>
+    <div class="plate spec-panel"><h3>Flight profile</h3><div class="spec-table">{flight.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}</div></div>
+    <div class="plate spec-panel"><h3>Systems</h3><div class="spec-table">{systems.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}</div></div>
+  </div></div></section>
+
+  <section class="section"><div class="page-wrap detail-grid lower-register">
+    <div><p class="kicker">Ship statistics</p><h2>Eight seats.<br />Thirty-five tons.</h2><div class="spec-table"><div class="spec-row"><span>Class</span><strong>Colossal space transport</strong></div><div class="spec-row"><span>Owner</span><strong>Sirona O’Keefe</strong></div><div class="spec-row"><span>Cargo</span><strong>35 tons</strong></div><div class="spec-row"><span>Consumables</span><strong>1 month</strong></div><div class="spec-row"><span>Carried craft</span><strong>None</strong></div><div class="spec-row"><span>Availability</span><strong>Unique // not available for sale</strong></div></div></div>
+    <div class="plate about-card"><p class="kicker">Crew manifest</p><h3>Two at the controls.</h3><div class="spec-table"><div class="spec-row"><span>Pilot</span><strong>Sirona O’Keefe</strong></div><div class="spec-row"><span>Copilot</span><strong>RX-13 “Crash”</strong></div><div class="spec-row"><span>Passengers</span><strong>8</strong></div><div class="spec-row"><span>Initiative</span><strong>+3</strong></div><div class="spec-row"><span>Perception</span><strong>+10</strong></div></div></div>
+  </div></section>
+
+  <section class="section"><div class="page-wrap"><div class="section-head"><div><p class="kicker">Deck plan // annotated reference</p><h2>Every room has<br />a contingency.</h2></div><p>Airlock, guest and owner suites, pool, lounge, cargo overlooks, galley, bridge, engineering, medbay, crew cabins, boarding ramps, and the docking bays are all accounted for. Whether they remain tidy is a separate question.</p></div><figure class="plate banshee-gallery"><img src={`${base}media/ships/banshee/deck-plan.png`} alt="Annotated Banshee deck plan showing the yacht interior, cargo overlooks, docking bays, bridge, engineering, medbay, and crew spaces" /><figcaption>Attached reference // Banshee exterior and labeled deck plans</figcaption></figure></div></section>
+
+  <section class="section"><div class="page-wrap"><div class="plate about-card related-skills"><p class="kicker">Related skills</p><div class="skill-tags"><span>Initiative +6</span><span>Mechanics +14</span><span>Perception +10</span><span>Pilot +11</span><span>Use Computer +7</span></div></div></div></section>
 </Layout>
