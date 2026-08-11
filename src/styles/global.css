@@ -150,6 +150,24 @@ p { margin: 0; }
 .card-link { color: var(--orange); font: 600 12px var(--font-mono); letter-spacing: .06em; }
 .card-link:hover { color: var(--bone); }
 
+.dossier-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; align-items: start; }
+.dossier-portrait { position: relative; display: grid; place-items: center; min-height: 420px; overflow: hidden; border: 1px solid var(--seam); border-radius: 4px; background: radial-gradient(circle at 50% 40%, rgba(212,101,42,.28), transparent 35%), linear-gradient(145deg, var(--plate-raised), var(--forge)); }
+.dossier-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+.dossier-role { margin-top: 14px; color: var(--orange); font-size: 13px; letter-spacing: .06em; }
+.dossier-grid .lede { margin-top: 20px; }
+.dossier-subhead { margin-top: 40px; }
+.ability-grid { grid-template-columns: repeat(6, minmax(0,1fr)); }
+.ability-grid .stat strong { font-size: 30px; }
+.skill-tags span.expertise { border-color: var(--orange); color: var(--bone); }
+.dossier-body { max-width: 680px; color: var(--sand); font-size: 16px; line-height: 1.7; }
+.dossier-body p + p { margin-top: 16px; }
+.dossier-back { margin-top: 40px; }
+
+@media (max-width: 860px) {
+  .dossier-grid { grid-template-columns: 1fr; gap: 28px; }
+  .ability-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+
 .hangar-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
 .ship-card { min-height: 390px; overflow: hidden; }
 .ship-card.featured { grid-row: span 2; }
