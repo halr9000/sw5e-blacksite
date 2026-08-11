@@ -30,11 +30,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test
+        run: npm test
+
       - name: Build
         run: npm run build
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_ACTIONS: true
+
+      - name: Check roster.json is up to date
+        run: git diff --exit-code src/data/roster.json
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

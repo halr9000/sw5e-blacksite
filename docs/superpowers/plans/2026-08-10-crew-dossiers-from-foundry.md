@@ -837,10 +837,10 @@ Append to `src/styles/global.css`, immediately after the `.crew-card.revealed .b
 - [ ] **Step 5: Verify the index builds and renders**
 
 ```bash
-npm run build && grep -c "OPEN FILE" dist/crew/index.html
+npm run build && grep -o "OPEN FILE" dist/crew/index.html | wc -l
 ```
 
-Expected: build succeeds and `grep` prints `11`. The build log should show no `[roster]` warnings — all nine exports are referenced by an overlay, and the two overlays without an `export:` field are flavor-only by design.
+Expected: build succeeds and the count is `11`. The build log should show no `[roster]` warnings — all nine exports are referenced by an overlay, and the two overlays without an `export:` field are flavor-only by design.
 
 Two failure modes to recognise. `[roster] <slug>: no export named "…"` means an overlay's `export:` value does not match a filename in `data/actors/` — fix the overlay. `[roster] export "…" is not referenced by any overlay` means the reverse. Either way the build still succeeds; the warnings exist so a mismatch is visible rather than silent.
 
@@ -1029,4 +1029,4 @@ Checked against the spec:
 - Dossier layout, flavor-only members degrading cleanly, CSS reuse → Task 5
 - Every spec verification item appears as a concrete command in Task 5 Step 3
 
-One thing the spec left implicit and this plan decides: the card's `.bio` reveal now shows the tagline rather than the prose, since the prose lives on the dossier and duplicating it on the card serves nothing. If that reads wrong in practice, the fix is one line in Task 4 Step 3.
+One thing the spec left implicit and this plan decides: the card's `.bio` reveal shows the overlay's prose, exactly as the current page does, since the tagline already renders in `.species` directly above and an UNSEAL button that reveals text the reader can already see is not a reveal. If that reads wrong in practice, the fix is one line in Task 4 Step 3.

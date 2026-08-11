@@ -23,7 +23,7 @@ export function mergeMembers(entries, roster, warn = console.warn) {
     if (data.export) {
       referenced.add(data.export);
       sheet = roster[data.export] ?? null;
-      if (!sheet) warn(`[roster] ${entry.id}: no export named "${data.export}"`);
+      if (!sheet) throw new Error(`[roster] ${entry.id}: no export named "${data.export}"`);
     }
 
     return {

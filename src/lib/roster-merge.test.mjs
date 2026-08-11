@@ -70,12 +70,11 @@ test('bio is an empty string when the body is missing', () => {
   assert.equal(member.bio, '');
 });
 
-test('an overlay naming a missing export warns and does not throw', () => {
-  const warnings = [];
-  const members = mergeMembers([entry('ghost', { export: 'nope.json', order: 1 })], {}, (m) => warnings.push(m));
-  assert.equal(members[0].sheet, null);
-  assert.equal(warnings.length, 1);
-  assert.match(warnings[0], /ghost.*nope\.json/);
+test('an overlay naming a missing export throws', () => {
+  assert.throws(
+    () => mergeMembers([entry('ghost', { export: 'nope.json', order: 1 })], {}),
+    /ghost.*nope\.json/,
+  );
 });
 
 test('an export no overlay references warns', () => {

@@ -51,8 +51,9 @@ const facts = [
       </div>
       {sheet.skills.length > 0 && <>
         <p class="kicker dossier-subhead">Proficient</p>
+        {sheet.skills.some((skill) => skill.expertise) && <p class="mono text-muted">◈ expertise</p>}
         <div class="skill-tags">
-          {sheet.skills.map((skill) => <span class:list={[skill.expertise ? 'expertise' : '']}>{skill.name}{skill.expertise && ' ◈'}</span>)}
+          {sheet.skills.map((skill) => <span class:list={[skill.expertise ? 'expertise' : '']}>{skill.name}{skill.expertise && <span aria-label="expertise"> ◈</span>}</span>)}
         </div>
       </>}
     </div>

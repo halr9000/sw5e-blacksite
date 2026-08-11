@@ -39,7 +39,7 @@ export function pruneActor(actor) {
       if (!name) throw new Error(`Unknown skill code "${code}" for ${actor.name}`);
       return { name, expertise: skill.value >= 2 };
     })
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => a.name.localeCompare(b.name, 'en'));
 
   const abilities = {};
   for (const key of ABILITIES) abilities[key] = actor.system.abilities[key].value;
@@ -64,7 +64,11 @@ export function buildRoster(dir = SOURCE_DIR) {
   const roster = {};
   for (const file of readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
     const actor = JSON.parse(readFileSync(join(dir, file), 'utf8'));
-    roster[file] = pruneActor(actor);
+    try {
+      roster[file] = pruneActor(actor);
+    } catch (err) {
+      throw new Error(`${file}: ${err.message}`, { cause: err });
+    }
   }
   return roster;
 }
