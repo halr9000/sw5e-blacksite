@@ -4,8 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "roster": "node scripts/build-roster.mjs",
+    "test": "node --test scripts/ src/lib/",
+    "dev": "npm run roster && astro dev",
+    "build": "npm run roster && astro build",
     "preview": "astro preview"
   },
   "dependencies": {

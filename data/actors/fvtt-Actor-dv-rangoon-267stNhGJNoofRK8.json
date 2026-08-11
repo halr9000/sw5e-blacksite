@@ -1,0 +1,5835 @@
+{
+  "name": "DV-Rangoon",
+  "type": "character",
+  "img": "https://assets.forge-vtt.com/679f9bd9273a6ec4f2a1206c/Muckraker.png",
+  "system": {
+    "currency": {
+      "gc": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 17,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 10,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "lor": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "pil": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "tec": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      }
+    },
+    "tools": {
+      "securitykit": {
+        "value": 1,
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "check": ""
+        }
+      },
+      "slicerskit": {
+        "value": 1,
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "check": ""
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null
+      },
+      "spell2": {
+        "value": 0,
+        "override": null
+      },
+      "spell3": {
+        "value": 0,
+        "override": null
+      },
+      "spell4": {
+        "value": 0,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "override": null
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      }
+    },
+    "powercasting": {
+      "force": {
+        "known": {
+          "max": null
+        },
+        "level": null,
+        "limit": null,
+        "maxPowerLevel": null,
+        "points": {
+          "value": 0,
+          "max": null,
+          "bonuses": {},
+          "temp": 0
+        },
+        "schools": {
+          "lgt": {
+            "attr": null,
+            "dc": null
+          },
+          "uni": {
+            "attr": null,
+            "dc": null
+          },
+          "drk": {
+            "attr": null,
+            "dc": null
+          }
+        },
+        "used": []
+      },
+      "tech": {
+        "known": {
+          "max": null
+        },
+        "level": null,
+        "limit": null,
+        "maxPowerLevel": null,
+        "points": {
+          "value": 11,
+          "max": null,
+          "bonuses": {},
+          "temp": 0
+        },
+        "schools": {
+          "tec": {
+            "attr": null,
+            "dc": null
+          }
+        },
+        "used": []
+      }
+    },
+    "superiority": {
+      "known": {
+        "max": null
+      },
+      "dice": {
+        "value": 0,
+        "max": null,
+        "bonuses": {},
+        "temp": 0
+      },
+      "die": null,
+      "types": {
+        "physical": {
+          "attr": null,
+          "dc": null
+        },
+        "mental": {
+          "attr": null,
+          "dc": null
+        },
+        "general": {
+          "attr": null,
+          "dc": null
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "default",
+        "flat": null,
+        "formula": "13"
+      },
+      "init": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonus": ""
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "walk": null,
+        "units": null,
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": null,
+        "special": ""
+      },
+      "spellcasting": "",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1
+      },
+      "loyalty": {
+        "value": null
+      },
+      "hp": {
+        "value": 83,
+        "max": null,
+        "temp": null,
+        "tempmax": 0,
+        "bonuses": {}
+      },
+      "death": {
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {
+      "name": "",
+      "description": ""
+    },
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "U2uqqUTltRFdFs96",
+      "background": "2kWcz3yC08icyBaO",
+      "originalClass": "JM9Hu4DFlcg8TsBT",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "weight": "",
+      "gender": "",
+      "skin": "",
+      "age": ""
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "dr": {
+        "value": [
+          "necrotic",
+          "poison",
+          "psychic"
+        ],
+        "custom": "",
+        "bypasses": []
+      },
+      "dv": {
+        "value": [
+          "ion"
+        ],
+        "custom": "",
+        "bypasses": []
+      },
+      "dm": {
+        "amount": {},
+        "bypasses": []
+      },
+      "ci": {
+        "value": [
+          "poisoned",
+          "diseased"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "binary",
+          "bothese",
+          "common",
+          "ewokese",
+          "jawaese",
+          "twi'leki"
+        ],
+        "custom": "",
+        "communication": {
+          "telepathy": {
+            "value": null,
+            "units": "ft"
+          }
+        }
+      },
+      "weaponProf": {
+        "value": [
+          "sbl",
+          "svb"
+        ],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [
+          "lgt"
+        ],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": [
+      {
+        "type": "item",
+        "id": ".Item.NNQDKJ7dsvwcBb2m",
+        "sort": 100000
+      }
+    ]
+  },
+  "prototypeToken": {
+    "name": "DV-U5",
+    "displayName": 0,
+    "actorLink": true,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "https://assets.forge-vtt.com/679f9bd9273a6ec4f2a1206c/Muckraker.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 0.8,
+        "texture": null
+      }
+    },
+    "flags": {
+      "wall-height": {
+        "tokenHeight": 0.5
+      },
+      "patrol": {
+        "enablePatrol": false,
+        "enableSpotting": false,
+        "makePatroller": false,
+        "multiPath": false,
+        "patrolPathName": "",
+        "pathNodeIndex": "0"
+      },
+      "monks-tokenbar": {
+        "include": "default"
+      },
+      "autorotate": {
+        "enabled": null,
+        "offset": null
+      }
+    },
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Droid, Class II",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:55.9146224+00:00",
+          "importer_version": 3,
+          "uid": "Species.name-droid_class_ii"
+        }
+      },
+      "type": "race",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<h2>Appearance</h2>\n<p>Class II droids are typically small, standing between two and four feet. Their form and color scheme vary based on tasks for which they are created, their affiliation, or quirks of their owner.</p>\n<p>They are noteworthy for their distinct, function-oriented form.</p>\n<h2>Utility</h2>\n<p>Class II droids are programmed for engineering and other technical sciences. They differ from class one droids because they apply the science to real-life situations. Class II droids are rarely equipped with Basic vocabulators, instead communicating through Binary. There are five subcategories of class II droids. Astromech, exploration, environmental, engineering, and maintenance droids are all class II droids.</p>\n<h2>Names</h2>\n<p>Droids are typically called by their designation, given to them when they are created, or some affectation given to them by their owner. Often this affectation is a play on their designation. Occasionally, noteworthy droids will earn monikers based on their accomplishments.</p>\n<p><strong>Designations (Names).</strong> BB-5 (Beebees), CH-33P (Cheep),  OC-JK14 (Seejay), PT-7 (Poot), RG-G1 (G-G)</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "identifier": "droid-classii",
+        "type": {
+          "value": "droid"
+        },
+        "movement": {
+          "walk": 25,
+          "burrow": null,
+          "climb": null,
+          "fly": null,
+          "swim": null,
+          "units": null,
+          "hover": false
+        },
+        "senses": {
+          "darkvision": null,
+          "blindsight": null,
+          "tremorsense": null,
+          "truesight": null,
+          "units": null,
+          "special": ""
+        },
+        "advancement": [
+          {
+            "_id": "sw5e0ig000000000",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.Xao9zrpvj4DheCb5",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.718FGh10y6gZqymR",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.HGjmEDPFrbubJ706",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.32hG9EVFWTrK7pmR",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.50JWWn3PABceVzD7",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.f1KhVqEfCImma4sZ",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.YJtsv6LRAlNO269h",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.LBVpvKrMGDhzRztl",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.L9JkywxDxCs9LWYb",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.JSLXxPJM5xkZysgU",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.BWsKE42WVM9RuGG0",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.Eivt7vZsML4P7pY7",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.vb7xQrlgaEPAZQRC",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.OWLnhuZ2Dw1JRjF1",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.to4DK15L0s8gKQxn",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.0rLKzV2SHFmZ2Am6",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.speciesfeatures.q0EPxP9jevLGnfCb",
+                  "optional": false
+                }
+              ],
+              "optional": true,
+              "spell": null
+            },
+            "level": 0,
+            "title": "Features",
+            "type": "ItemGrant",
+            "value": {
+              "added": {
+                "7R0M9sdt1IxTsZHb": "Compendium.sw5e.speciesfeatures.Item.Xao9zrpvj4DheCb5",
+                "OZimwx08yFNImeFx": "Compendium.sw5e.speciesfeatures.Item.718FGh10y6gZqymR",
+                "W696lR0vUOXxHDqk": "Compendium.sw5e.speciesfeatures.Item.HGjmEDPFrbubJ706",
+                "J7LfyAfVmhH0kbxl": "Compendium.sw5e.speciesfeatures.Item.32hG9EVFWTrK7pmR",
+                "OY8G1ttFu9nz3b9r": "Compendium.sw5e.speciesfeatures.Item.50JWWn3PABceVzD7",
+                "dcvuLVNUQaOONmAj": "Compendium.sw5e.speciesfeatures.Item.f1KhVqEfCImma4sZ",
+                "fcJKLCMVJ6XzYGzW": "Compendium.sw5e.speciesfeatures.Item.YJtsv6LRAlNO269h",
+                "bHcphs8ZFfjkLWDG": "Compendium.sw5e.speciesfeatures.Item.LBVpvKrMGDhzRztl",
+                "75tVXtpHDNzVDfl3": "Compendium.sw5e.speciesfeatures.Item.L9JkywxDxCs9LWYb",
+                "T90zQejWA9jKKHXw": "Compendium.sw5e.speciesfeatures.Item.JSLXxPJM5xkZysgU",
+                "LLo4CJm3XscT9Bxc": "Compendium.sw5e.speciesfeatures.Item.BWsKE42WVM9RuGG0",
+                "xhOHG78srsKe2log": "Compendium.sw5e.speciesfeatures.Item.Eivt7vZsML4P7pY7",
+                "Ov7wVu6RH8xUmMFe": "Compendium.sw5e.speciesfeatures.Item.vb7xQrlgaEPAZQRC",
+                "bmyn2C7GqUNQGX37": "Compendium.sw5e.speciesfeatures.Item.OWLnhuZ2Dw1JRjF1",
+                "5IkYQP6nGO22LiDx": "Compendium.sw5e.speciesfeatures.Item.to4DK15L0s8gKQxn",
+                "9nypvoVnChOaYAST": "Compendium.sw5e.speciesfeatures.Item.0rLKzV2SHFmZ2Am6",
+                "NYLyP9W97MA4eq5g": "Compendium.sw5e.speciesfeatures.Item.q0EPxP9jevLGnfCb"
+              }
+            }
+          },
+          {
+            "_id": "sw5e1asi00000000",
+            "configuration": {
+              "fixed": {
+                "int": 2
+              },
+              "points": 1,
+              "cap": 2,
+              "locked": []
+            },
+            "level": 0,
+            "type": "AbilityScoreImprovement",
+            "value": {
+              "type": "asi",
+              "assignments": {
+                "int": 2
+              }
+            }
+          },
+          {
+            "_id": "sw5e2s0000000000",
+            "configuration": {
+              "sizes": [
+                "sm"
+              ]
+            },
+            "level": 0,
+            "type": "Size",
+            "value": {
+              "size": "sm"
+            }
+          },
+          {
+            "_id": "sw5e3t0000000000",
+            "configuration": {
+              "choices": [
+                {
+                  "count": 1,
+                  "pool": [
+                    "tool:kit:*"
+                  ]
+                },
+                {
+                  "count": 2,
+                  "pool": [
+                    "skills:*"
+                  ]
+                }
+              ],
+              "grants": [
+                "dr:necrotic",
+                "dr:poison",
+                "dr:psychic",
+                "ci:poisoned",
+                "ci:diseased",
+                "dv:ion"
+              ],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 0,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "dr:necrotic",
+                "dr:poison",
+                "dr:psychic",
+                "ci:poisoned",
+                "ci:diseased",
+                "dv:ion",
+                "skills:prc",
+                "skills:ins",
+                "tool:kit:securitykit"
+              ]
+            }
+          }
+        ]
+      },
+      "effects": [
+        {
+          "_id": "1QGm5ILFRToMUhLq",
+          "changes": [
+            {
+              "key": "flags.sw5e.undersized",
+              "mode": 5,
+              "priority": 20,
+              "value": "1"
+            },
+            {
+              "key": "flags.sw5e.forceInsensitive",
+              "mode": 5,
+              "priority": 20,
+              "value": "1"
+            },
+            {
+              "key": "flags.sw5e.maintenanceMode",
+              "mode": 5,
+              "priority": 20,
+              "value": "1"
+            },
+            {
+              "key": "flags.sw5e.rapidReconstruction",
+              "mode": 5,
+              "priority": 20,
+              "value": "1"
+            },
+            {
+              "key": "flags.sw5e.undersized",
+              "mode": 5,
+              "priority": 20,
+              "value": "1"
+            },
+            {
+              "key": "flags.sw5e.armorIntegration",
+              "mode": 5,
+              "priority": 20,
+              "value": "1"
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": 144,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "transfer": true,
+          "flags": {},
+          "origin": null,
+          "name": "Droid, Class II",
+          "description": "",
+          "statuses": [],
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "dnd5e",
+            "systemVersion": "4.3.9",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "img": "modules/sw5e/icons/packs/Species/Droid%20Class%20II.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0
+        }
+      ],
+      "_id": "U2uqqUTltRFdFs96",
+      "folder": null,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.species.Item.i1IvalC878zyFLah",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "sort": 0
+    },
+    {
+      "name": "Ability Score Increase",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.216447+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-ability_score_increase.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.Xao9zrpvj4DheCb5",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Your Intelligence score increases by 2, and your Dexterity or Wisdom score increases by 1.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "ability-score-increase",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "7R0M9sdt1IxTsZHb",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.Xao9zrpvj4DheCb5",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Age",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2174465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-age.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.718FGh10y6gZqymR",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Droids don't age, though they require maintenance to retain functionality.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "age",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "OZimwx08yFNImeFx",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.718FGh10y6gZqymR",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Alignment",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2174465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-alignment.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.HGjmEDPFrbubJ706",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Droids tend toward no particular alignment. The best and worst are found among them.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "alignment",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "W696lR0vUOXxHDqk",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.HGjmEDPFrbubJ706",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Size",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2174465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-size.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.32hG9EVFWTrK7pmR",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Class II droids stand 2 to 4 feet tall and weigh about 70 lbs. Regardless of your position in that range, your size is Small.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "size",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "J7LfyAfVmhH0kbxl",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.32hG9EVFWTrK7pmR",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Speed",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2174465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-speed.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.50JWWn3PABceVzD7",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Your base walking speed is 25 feet.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "speed",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "OY8G1ttFu9nz3b9r",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.50JWWn3PABceVzD7",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Type",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2174465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-type.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.f1KhVqEfCImma4sZ",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Your creature type is droid.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "type",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "dcvuLVNUQaOONmAj",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.f1KhVqEfCImma4sZ",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Armor Integration",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2174465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-armor_integration.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.YJtsv6LRAlNO269h",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You can not wear armor, but you can have the armor professionally integrated into your chassis over the course of a long rest. This work must be done by someone proficient with astrotech's implements. You must be proficient in armor in order to have it integrated.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "armor-integration",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "fcJKLCMVJ6XzYGzW",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.YJtsv6LRAlNO269h",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Droid Resistances",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2184465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-droid_resistances.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.LBVpvKrMGDhzRztl",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You are resistant to necrotic, poison, and psychic damage, and are immune to poison and disease.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "droid-resistances",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "bHcphs8ZFfjkLWDG",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.LBVpvKrMGDhzRztl",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Droid Systems",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2184465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-droid_systems.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.L9JkywxDxCs9LWYb",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You do not need to eat, drink, or breathe. Additionally, you no longer require a tech focus to cast tech powers.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "droid-systems",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "75tVXtpHDNzVDfl3",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.L9JkywxDxCs9LWYb",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Droid Vulnerabilities",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2184465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-droid_vulnerabilities.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.JSLXxPJM5xkZysgU",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You are vulnerable to ion damage. Additionally, you have disadvantage on saving throws against effects that would deal ion or lightning damage.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "droid-vulnerabilities",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "T90zQejWA9jKKHXw",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.JSLXxPJM5xkZysgU",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Force-Insensitive",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2184465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-force_insensitive.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.BWsKE42WVM9RuGG0",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>While droids can be manipulated by many force powers, they can not sense the Force. You can not use force powers or take levels in forcecasting classes.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "force-insensitive",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "LLo4CJm3XscT9Bxc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.BWsKE42WVM9RuGG0",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Integrated Engineering",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2184465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-integrated_engineering.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.Eivt7vZsML4P7pY7",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You have proficiency in one specialist's kit of your choice. The chosen kit is integrated into your chassis, and can not be removed while you are conscious.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "integrated-engineering",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "xhOHG78srsKe2log",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.Eivt7vZsML4P7pY7",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Maintenance Mode",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2184465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-maintenance_mode.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.vb7xQrlgaEPAZQRC",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Rather than sleep, you must spend 3 hours performing routine maintenance during a long rest to gain its benefits, during which you have disadvantage on Wisdom (Perception) checks. Additionally, if your long rest would be interrupted, you only need to complete the long rest instead of restarting it.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "maintenance-mode",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "Ov7wVu6RH8xUmMFe",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.vb7xQrlgaEPAZQRC",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Rapid Reconstruction",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2194465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-rapid_reconstruction.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.OWLnhuZ2Dw1JRjF1",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000"
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You are built with internal repair mechanisms. As a bonus action, you can choose to spend one of your Hit Dice to recover hit points.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "rapid-reconstruction",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "bmyn2C7GqUNQGX37",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.OWLnhuZ2Dw1JRjF1",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Skill Protocol",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2194465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-skill_protocol.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.to4DK15L0s8gKQxn",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You have proficiency in two skills of your choice.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "skill-protocol",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "5IkYQP6nGO22LiDx",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.to4DK15L0s8gKQxn",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Undersized",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2194465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-undersized.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.0rLKzV2SHFmZ2Am6",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>Your small stature makes it hard for you to wield bigger weapons. You can't use heavy shields. Additionally, you can't use martial weapons with the two-handed property unless it also has the light property, and if a martial weapon has the versatile property, you can only wield it in two hands.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "undersized",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "9nypvoVnChOaYAST",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.0rLKzV2SHFmZ2Am6",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Languages",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:56.2194465+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-languages.source-species.sourceName-droid_class_ii"
+        },
+        "dnd5e": {
+          "sourceId": "Compendium.sw5e.speciesfeatures.Item.q0EPxP9jevLGnfCb",
+          "advancementOrigin": "U2uqqUTltRFdFs96.sw5e0ig000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Species/Droid-ClassIi.webp",
+      "system": {
+        "description": {
+          "value": "<p>You can speak, read, and write Binary. You can understand spoken and written Galactic Basic and one language of your choice, but you can not speak them.</p>",
+          "chat": ""
+        },
+        "requirements": "Droid, Class II",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "type": {
+          "value": "species",
+          "subtype": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "activities": {},
+        "identifier": "languages",
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "_id": "NYLyP9W97MA4eq5g",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.speciesfeatures.Item.q0EPxP9jevLGnfCb",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "2kWcz3yC08icyBaO",
+      "name": "Companion",
+      "type": "background",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Backgrounds/Companion.webp",
+      "effects": [
+        {
+          "_id": "vkjxLXTTqcu51mT0",
+          "changes": [
+            {
+              "key": "system.details.background",
+              "value": "Companion",
+              "mode": 5,
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": 144,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "transfer": true,
+          "flags": {},
+          "origin": null,
+          "name": "Companion",
+          "description": "",
+          "statuses": [],
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "dnd5e",
+            "systemVersion": "4.3.9",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "img": "modules/sw5e/icons/packs/Backgrounds/Companion.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0
+        }
+      ],
+      "folder": null,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:52:13.1046547+00:00",
+          "importer_version": 3,
+          "uid": "Background.name-companion"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"background\">\n\t<p>\n\t\t</p><p>You are experienced in the arts of companionship, and you provide these services for people who can afford to pay it. This may mean adult favors of the sensual variety, but it just as frequently means conversation, comfort, and company.</p>\n\t<p></p>\n</div>\n<div class=\"background\">\n\t<p><strong>Skill Proficiencies:</strong> Choose two from Acrobatics, Deception, Insight, and Performance</p>\n</div>\n<div class=\"background\">\n\t<p><strong>Tool Proficiencies:</strong> One instrument of your choice or a disguise kit</p>\n</div>\n<div class=\"background\">\n\t<p><strong>Languages:</strong> One of your choice</p>\n</div>\n<div class=\"background\">\n\t<p><strong>Equipment:</strong> A set of common clothes, an instrument or disguise kit, and a belt pouch containing 50 cr</p>\n</div>\n<div class=\"background\"><h2>Feature: Sordid Knowledge</h2></div>\n<div class=\"background\"><p>You have or can gain compromising information about people of importance. You may be able to leverage this information in order to acquire lodging, information, or even money.  You may also become a target for having this information. Your GM may rule that any particular individual is either above reproach or is too careful in covering their tracks to provide such leverage.  \n</p></div><h2>Background Feat</h2>\n<p>\n\tAs a further embodiment of the experience and training of your background, you can choose from the\n\tfollowing feats:\n</p>\n<div class=\"smalltable\">\n\t<p>\n\t\t</p><table><thead><tr><th>[[/r d8 # Feat]]</th><th>Feat</th></tr></thead><tbody><tr class=\"rows\"><th>1</th><th>@UUID[Compendium.sw5e.feats.Item.tRBTUPCE7z2NXh6t]{Acrobat}</th></tr><tr class=\"rows\"><th>2</th><th>@UUID[Compendium.sw5e.feats.Item.pXakrWdEv2BKYYW8]{Silver-tongued}</th></tr><tr class=\"rows\"><th>3</th><th>@UUID[Compendium.sw5e.feats.Item.0ouvGghIhtufl2a9]{Empathic}</th></tr><tr class=\"rows\"><th>4</th><th>@UUID[Compendium.sw5e.feats.Item.17gBRGzWPRJiQvTs]{Performer}</th></tr><tr class=\"rows\"><th>5</th><th>@UUID[Compendium.sw5e.feats.Item.f7d2Ishti7Ui7zdq]{Entertainer}</th></tr><tr class=\"rows\"><th>6</th><th>@UUID[Compendium.sw5e.feats.Item.TonpRFhus7GQEe9u]{Specialist}</th></tr><tr class=\"rows\"><th>7</th><th>@UUID[Compendium.sw5e.feats.Item.bqcghDqZHiXg1VqF]{Linguist}</th></tr><tr class=\"rows\"><th>8</th><th>@UUID[Compendium.sw5e.feats.Item.Beg3ouX2K8W2x1lr]{Force of personality}</th></tr></tbody></table>\n\t<p></p>\n</div>\n<div class=\"background\"><h2>Suggested Characteristics</h2></div>\n<div class=\"medtable\">\n\t<p>\n\t\t</p><table><thead><tr><th>[[/r d8 # Personality Trait]]</th><th>Personality Trait</th></tr></thead><tbody><tr class=\"rows\"><th>1</th><th>People are often hurt and damaged. I try to heal them and leave them stronger than when I meet them.</th></tr><tr class=\"rows\"><th>2</th><th>I enjoy being in control and manipulating people. It's important that they like me so they do what I say.</th></tr><tr class=\"rows\"><th>3</th><th>I'm not a laser-brain, although I don't open my mouth to prove people wrong. I let them discover the truth after I have what I want.</th></tr><tr class=\"rows\"><th>4</th><th>I'm better than those who are more prim and proper, and I'm having more fun.</th></tr><tr class=\"rows\"><th>5</th><th>I don't really care what happens, it's an easy way to get money for my habit.</th></tr><tr class=\"rows\"><th>6</th><th>There are so many different kinds of people, and I want to meet them all.</th></tr><tr class=\"rows\"><th>7</th><th>I never thought this was the life for me, perhaps some brave person will rescue me.</th></tr><tr class=\"rows\"><th>8</th><th>I like what I do and I resent those who want to rescue me.</th></tr></tbody></table>\n\t<p></p>\n</div>\n<p> </p><div class=\"medtable\">\n\t<p>\n\t\t</p><table><thead><tr><th>[[/r d6 # Ideal]]</th><th>Ideal</th></tr></thead><tbody><tr class=\"rows\"><th>1</th><th>Sacred: My body is a temple I am duty-bound to share. (Lawful)</th></tr><tr class=\"rows\"><th>2</th><th>Hedonism: I fill my urges when and where I wish. (Chaotic)</th></tr><tr class=\"rows\"><th>3</th><th>Loving: Everyone needs attention and love. (Light)</th></tr><tr class=\"rows\"><th>4</th><th>Exploitation: I take pleasure in toying with people, and taking advantage of them. (Dark)</th></tr><tr class=\"rows\"><th>5</th><th>Consent: I respect other's desires and wishes. (Neutral)</th></tr><tr class=\"rows\"><th>6</th><th>Freedom: I want to have the independence to enjoy life. (Any)</th></tr></tbody></table>\n\t<p></p>\n</div>\n<p> </p><div class=\"medtable\">\n\t<p>\n\t\t</p><table><thead><tr><th>[[/r d6 # Flaw]]</th><th>Flaw</th></tr></thead><tbody><tr class=\"rows\"><th>1</th><th>I have an incurable disease I acquired from a client.</th></tr><tr class=\"rows\"><th>2</th><th>I am addicted to recreational drugs that dull the pain I feel.</th></tr><tr class=\"rows\"><th>3</th><th>I no longer practice my old profession, and I fear anyone discovering it.</th></tr><tr class=\"rows\"><th>4</th><th>I am suspicious of anyone who tries to be nice to me. They only want me to sleep with them.</th></tr><tr class=\"rows\"><th>5</th><th>Most people are naive children.</th></tr><tr class=\"rows\"><th>6</th><th>I pretend to be tough, but am broken inside.</th></tr></tbody></table>\n\t<p></p>\n</div>\n<p> </p><div class=\"medtable\">\n\t<p>\n\t\t</p><table><thead><tr><th>[[/r d6 # Bond]]</th><th>Bond</th></tr></thead><tbody><tr class=\"rows\"><th>1</th><th>I seek a relationship with the most powerful people in the land, desiring to be the power behind the throne.</th></tr><tr class=\"rows\"><th>2</th><th>If I can only collect enough credits, I'll be able to pay off my debts and be free.</th></tr><tr class=\"rows\"><th>3</th><th>I have a sick parent to whom I send all my money.</th></tr><tr class=\"rows\"><th>4</th><th>My independence is the most important thing in my world.</th></tr><tr class=\"rows\"><th>5</th><th>I bring happiness to the world one person at a time.</th></tr><tr class=\"rows\"><th>6</th><th>I have a young child who is my world.</th></tr></tbody></table>\n\t<p></p>\n</div>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "EC",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "identifier": "companion",
+        "advancement": [
+          {
+            "_id": "sw5e0t0000000000",
+            "configuration": {
+              "choices": [
+                {
+                  "count": 2,
+                  "pool": [
+                    "skills:acr",
+                    "skills:dec",
+                    "skills:ins",
+                    "skills:prf"
+                  ]
+                }
+              ],
+              "grants": [],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 0,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "skills:acr",
+                "skills:prf"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e1t0000000000",
+            "configuration": {
+              "choices": [
+                {
+                  "count": 1,
+                  "pool": [
+                    "languages:*"
+                  ]
+                }
+              ],
+              "grants": [],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 0,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "languages:standard:jawaese"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e2ic000000000",
+            "configuration": {
+              "allowDrops": true,
+              "choices": {
+                "0": {
+                  "count": 1,
+                  "replacement": false
+                }
+              },
+              "pool": [
+                {
+                  "uuid": "Compendium.sw5e.feats.tRBTUPCE7z2NXh6t"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.pXakrWdEv2BKYYW8"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.0ouvGghIhtufl2a9"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.17gBRGzWPRJiQvTs"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.f7d2Ishti7Ui7zdq"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.TonpRFhus7GQEe9u"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.bqcghDqZHiXg1VqF"
+                },
+                {
+                  "uuid": "Compendium.sw5e.feats.Beg3ouX2K8W2x1lr"
+                }
+              ],
+              "restriction": {
+                "level": "",
+                "subtype": "",
+                "type": "feat"
+              },
+              "type": "feat",
+              "spell": null
+            },
+            "title": "Feat",
+            "type": "ItemChoice",
+            "value": {
+              "added": {
+                "0": {
+                  "YdrsDHZS4fr9CJlf": "Compendium.sw5e.feats.Item.bqcghDqZHiXg1VqF"
+                }
+              },
+              "replaced": {}
+            },
+            "hint": "These feats are only suggestions, you can choose any feat without a level prerequisite, provided you meet any other prerequisite."
+          }
+        ],
+        "startingEquipment": []
+      },
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.backgrounds.Item.DdEVScEBtKVJLRLg",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "sort": 0
+    },
+    {
+      "_id": "YdrsDHZS4fr9CJlf",
+      "name": "Linguist",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Feats/Linguist.webp",
+      "effects": [
+        {
+          "_id": "zLgsiHPBheUMr83I",
+          "changes": [
+            {
+              "key": "system.abilities.int.value",
+              "value": "1",
+              "mode": 2,
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": 144,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "transfer": true,
+          "flags": {},
+          "origin": null,
+          "name": "Linguist",
+          "description": "",
+          "statuses": [],
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "dnd5e",
+            "systemVersion": "4.3.9",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "img": "modules/sw5e/icons/packs/Feats/Linguist.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.5075386+00:00",
+          "importer_version": 3,
+          "uid": "Feat.name-linguist"
+        },
+        "dnd5e": {
+          "persistSourceMigration": true,
+          "sourceId": "Compendium.sw5e.feats.Item.bqcghDqZHiXg1VqF",
+          "advancementOrigin": "2kWcz3yC08icyBaO.sw5e2ic000000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>You have studied languages and codes, gaining the following benefits:</p>\n<ul>\n<li>Increase your Intelligence score by 1, to a maximum of 20.</li>\n<li>You learn three languages of your choice.</li>\n<li>You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC = your Intelligence score + your proficiency bonus), or they use a power to decipher it.</li></ul>",
+          "chat": ""
+        },
+        "requirements": null,
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "feat",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "linguist",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.feats.Item.bqcghDqZHiXg1VqF",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "JM9Hu4DFlcg8TsBT",
+      "name": "Engineer",
+      "type": "class",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Classes/Engineer.webp",
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:57.62763+00:00",
+          "importer_version": 3,
+          "uid": "Class.name-engineer"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<img style=\"float:right;margin:5px;border:0px\" src=\"https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Classes/engineer_01.webp\" />\n<p>Flinching occasionally as a blaster bolt hits the nearby bulkhead, a Sullustan mechanic quickly solders a large wire. He peers through his tinted goggles, ignoring the shouts of his ship captain as the enemy descends on the hanger. Finally he shouts with pride as the repaired coupling powers up, causing the frigate to hum with energy. He gathers his tools and runs into the ship moments before it finally takes off. </p>\n<p>Inside, the human captain jumps into the cockpit. She nods to her droid co-pilot, who quickly begins charting a course home. Before the calculations can be completed, enemy Starfighters scream in from the clouds. The pilot rolls the ship, nimbly evading incoming fire. She reroutes the power to shields, leaving just enough for astronavigation. Just as the energy reserves near depletion, the exosphere and stars beyond blur into streaks of light. In a flash, they warp to safety. </p>\n<p>A Cerean officer surveys the battlefield, looking for weaknesses. When he identifies a potential problem, he keys in a quick combination in his wristpad. In a blink, a custom suit of armor assembles itself around him. As the helmet locks into place, the officer leaps into the air, flying overhead and raining destruction on the opposition.</p>\n<p>Every machine needs an engineer to run it, and a living crew is no different. Engineers are the experts and professionals who rely on skill, bravery, and their tools to survive and keep others alive. While they do not claim to be fighters, their mere presence can turn the tide of battle or simply keep operations running.</p>\n<h2>Behind the Curtain</h2>\n<p>While perhaps not as intimidating as a heavily-armored trooper, or as exotic as a lighsaber-wielding guardian, engineers are no less vital to group dynamic. They are armorers and gunsmiths, electricians and welders, or any other facet to be found in facilities across the galaxy. Their work, often unsung, is what keeps starships (and their crew) intact.</p>\n<h2>Unflappable</h2>\n<p>It takes bravery for a soldier to enter a battlefield. It perhaps takes more for someone who is unarmed, and untrained in combat, to do the same. Engineers put their lives on the line for a living, whether by choice or acknowledging their plights as an occupational hazard. Whether they come from an elite training academy or learned their talents surviving in the slums, they are no strangers to danger and conflict.</p>\n<p>While creating your engineer character, consider what your primary skill set is and how you use it. You could be a street-smart mechanic who taught yourself how to fix swoop bikes as a teenager. Perhaps you are the recent graduate of an esteemed medical college, or a rookie pilot in the fledgling Rebel Alliance. What is the number one skill you are known for? Why are you willing to enter battles when you have no combat training? How do you view the more adventurous members of your group, and how do they see you and your role?</p>\n<h3>Quick Build</h3>\n<p>You can make an engineer quickly by following these suggestions. First, make Intelligence your highest ability score. Your next-highest score should be Constitution. Second, choose the scientist background.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "identifier": "engineer",
+        "levels": 10,
+        "advancement": [
+          {
+            "_id": "sw5e0hp000000000",
+            "configuration": {},
+            "type": "HitPoints",
+            "value": {
+              "1": "max",
+              "2": "avg",
+              "3": "avg",
+              "4": "avg",
+              "5": "avg",
+              "6": "avg",
+              "7": "avg",
+              "8": "avg",
+              "9": "avg",
+              "10": "avg"
+            }
+          },
+          {
+            "_id": "sw5e1sv000000000",
+            "configuration": {
+              "identifier": "potent-aptitude",
+              "scale": {
+                "1": {
+                  "number": 1,
+                  "faces": 4,
+                  "modifiers": []
+                },
+                "5": {
+                  "number": 1,
+                  "faces": 6,
+                  "modifiers": []
+                },
+                "9": {
+                  "number": 1,
+                  "faces": 8,
+                  "modifiers": []
+                },
+                "13": {
+                  "number": 1,
+                  "faces": 10,
+                  "modifiers": []
+                },
+                "17": {
+                  "number": 1,
+                  "faces": 12,
+                  "modifiers": []
+                }
+              },
+              "type": "dice",
+              "distance": {
+                "units": ""
+              }
+            },
+            "title": "Potent Aptitude",
+            "type": "ScaleValue",
+            "value": {}
+          },
+          {
+            "_id": "sw5e2sv000000000",
+            "configuration": {
+              "identifier": "modification-slots",
+              "scale": {
+                "3": {
+                  "value": 4
+                },
+                "5": {
+                  "value": 5
+                },
+                "9": {
+                  "value": 6
+                },
+                "11": {
+                  "value": 7
+                },
+                "13": {
+                  "value": 8
+                },
+                "17": {
+                  "value": 9
+                }
+              },
+              "type": "number",
+              "distance": {
+                "units": ""
+              }
+            },
+            "title": "Modification Slots",
+            "type": "ScaleValue",
+            "value": {}
+          },
+          {
+            "_id": "sw5e3asi00000000",
+            "configuration": {
+              "cap": null,
+              "fixed": {},
+              "locked": [],
+              "points": 2
+            },
+            "level": 4,
+            "type": "AbilityScoreImprovement",
+            "value": {
+              "type": "asi",
+              "assignments": {}
+            }
+          },
+          {
+            "_id": "sw5e4asi00000000",
+            "configuration": {
+              "cap": null,
+              "fixed": {},
+              "locked": [],
+              "points": 2
+            },
+            "level": 8,
+            "type": "AbilityScoreImprovement",
+            "value": {
+              "type": "asi",
+              "assignments": {}
+            }
+          },
+          {
+            "_id": "sw5e5asi00000000",
+            "configuration": {
+              "cap": null,
+              "fixed": {},
+              "locked": [],
+              "points": 2
+            },
+            "level": 12,
+            "type": "AbilityScoreImprovement",
+            "value": {
+              "type": "asi"
+            }
+          },
+          {
+            "_id": "sw5e6asi00000000",
+            "configuration": {
+              "cap": null,
+              "fixed": {},
+              "locked": [],
+              "points": 2
+            },
+            "level": 16,
+            "type": "AbilityScoreImprovement",
+            "value": {
+              "type": "asi"
+            }
+          },
+          {
+            "_id": "sw5e7asi00000000",
+            "configuration": {
+              "cap": null,
+              "fixed": {},
+              "locked": [],
+              "points": 2
+            },
+            "level": 19,
+            "type": "AbilityScoreImprovement",
+            "value": {
+              "type": "asi"
+            }
+          },
+          {
+            "_id": "sw5e8t0000000000",
+            "classRestriction": "primary",
+            "configuration": {
+              "choices": [],
+              "grants": [
+                "armor:lgt"
+              ],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 1,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "armor:lgt"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e9t0000000000",
+            "classRestriction": "primary",
+            "configuration": {
+              "choices": [],
+              "grants": [
+                "weapon:sbl",
+                "weapon:svb"
+              ],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 1,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "weapon:sbl",
+                "weapon:svb"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e10t000000000",
+            "classRestriction": "primary",
+            "configuration": {
+              "choices": [
+                {
+                  "count": 1,
+                  "pool": [
+                    "tool:*"
+                  ]
+                }
+              ],
+              "grants": [
+                "tool:tinkersimplements"
+              ],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 1,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "tool:kit:slicerskit"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e11t000000000",
+            "classRestriction": "primary",
+            "configuration": {
+              "choices": [],
+              "grants": [
+                "saves:con",
+                "saves:int"
+              ],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 1,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "saves:con",
+                "saves:int"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e12t000000000",
+            "classRestriction": "primary",
+            "configuration": {
+              "choices": [
+                {
+                  "count": 3,
+                  "pool": [
+                    "skills:inv",
+                    "skills:lor",
+                    "skills:med",
+                    "skills:nat",
+                    "skills:pil",
+                    "skills:tec"
+                  ]
+                }
+              ],
+              "grants": [],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 1,
+            "type": "Trait",
+            "value": {
+              "chosen": [
+                "skills:tec",
+                "skills:med",
+                "skills:pil"
+              ]
+            }
+          },
+          {
+            "_id": "sw5e13t000000000",
+            "classRestriction": "secondary",
+            "configuration": {
+              "choices": [],
+              "grants": [
+                "armor:lgt"
+              ],
+              "mode": "default",
+              "allowReplacements": false
+            },
+            "level": 1,
+            "title": "Multiclass Proficiencies",
+            "type": "Trait",
+            "value": {
+              "chosen": []
+            }
+          },
+          {
+            "_id": "sw5e14ig00000000",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.sw5e.classfeatures.mCxdqUjDPAo38JTt",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.classfeatures.fGsRWj9oEKcrukw6",
+                  "optional": false
+                }
+              ],
+              "optional": false,
+              "spell": null
+            },
+            "level": 1,
+            "title": "Features",
+            "type": "ItemGrant",
+            "value": {
+              "added": {
+                "AMvfkUg0xtv7d1zF": "Compendium.sw5e.classfeatures.Item.mCxdqUjDPAo38JTt",
+                "DxyU9tF6Ajpsaw3v": "Compendium.sw5e.classfeatures.Item.fGsRWj9oEKcrukw6"
+              }
+            }
+          },
+          {
+            "_id": "sw5e15ig00000000",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.sw5e.classfeatures.CBf0Ynl0NuA2z7sl",
+                  "optional": false
+                },
+                {
+                  "uuid": "Compendium.sw5e.classfeatures.mX2O4be5m3rPokOa",
+                  "optional": false
+                }
+              ],
+              "optional": false,
+              "spell": null
+            },
+            "level": 2,
+            "title": "Features",
+            "type": "ItemGrant",
+            "value": {
+              "added": {
+                "ErgoQzI59jzgfnTT": "Compendium.sw5e.classfeatures.Item.CBf0Ynl0NuA2z7sl",
+                "KfPqUpRzwlpbrfEB": "Compendium.sw5e.classfeatures.Item.mX2O4be5m3rPokOa"
+              }
+            }
+          },
+          {
+            "_id": "sw5e16ig00000000",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.sw5e.classfeatures.shyd8NefpiwSPqof",
+                  "optional": false
+                }
+              ],
+              "optional": false,
+              "spell": null
+            },
+            "level": 3,
+            "title": "Features",
+            "type": "ItemGrant",
+            "value": {
+              "added": {
+                "WykmkZSnhR0H2uWw": "Compendium.sw5e.classfeatures.Item.shyd8NefpiwSPqof"
+              }
+            }
+          },
+          {
+            "_id": "sw5e17ig00000000",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.sw5e.classfeatures.f1XeMafaqejD02MW",
+                  "optional": false
+                }
+              ],
+              "optional": false,
+              "spell": null
+            },
+            "level": 20,
+            "title": "Features",
+            "type": "ItemGrant",
+            "value": {}
+          },
+          {
+            "_id": "sw5e18ic00000000",
+            "configuration": {
+              "allowDrops": true,
+              "choices": {
+                "3": {
+                  "count": 1,
+                  "replacement": false
+                }
+              },
+              "pool": [
+                {
+                  "uuid": "Compendium.sw5e.archetypes.DSaorO1E42ZAoYko"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.ozOP9vSQ4uwXFdGQ"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.TkSzn6cSCBsySMql"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.80auw3hdVYZAXGtr"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.1xihjITntU4T6OfP"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.p5sUTfZ2GnjkmpdC"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.QHBh0MLldjImDdoX"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.4WitHCdI0QiCuS8A"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.DAq5ZmQ6aQ88Q9oI"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.FaKY07usa5nH8I08"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.f7POhRSg0x4UXp1i"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.Y8uZyqAuOWmUZEDP"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.O3vgskHkhroUKBaZ"
+                },
+                {
+                  "uuid": "Compendium.sw5e.archetypes.iHC7hyf1Zr3Q4hDF"
+                }
+              ],
+              "restriction": {
+                "level": "",
+                "subtype": "",
+                "type": ""
+              },
+              "type": "archetype",
+              "spell": null
+            },
+            "title": "Engineering Disciplines",
+            "type": "ItemChoice",
+            "value": {
+              "added": {},
+              "replaced": {}
+            },
+            "hint": "Each discipline focuses on maximizing the personal use of a certain tool. Your discipline grants you features at 3rd, 6th, 14th, and 18th level."
+          }
+        ],
+        "startingEquipment": [],
+        "spellcasting": {
+          "techProgression": "full",
+          "superiorityProgression": "none",
+          "progression": "none",
+          "preparation": {},
+          "forceProgression": "none"
+        },
+        "hd": {
+          "denomination": "d8",
+          "spent": 0,
+          "additional": ""
+        },
+        "primaryAbility": {
+          "value": [],
+          "all": true
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.classes.Item.x44c004uiEWzTmOb",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1765768580101,
+        "lastModifiedBy": "xuF7L2mJfawnwhEn"
+      },
+      "sort": 0
+    },
+    {
+      "_id": "AMvfkUg0xtv7d1zF",
+      "name": "Techcasting",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Class%20Features/ENGR-Passive.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:58.5650853+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-techcasting.source-class.sourceName-engineer.level-1"
+        },
+        "dnd5e": {
+          "persistSourceMigration": true,
+          "sourceId": "Compendium.sw5e.classfeatures.Item.mCxdqUjDPAo38JTt",
+          "advancementOrigin": "JM9Hu4DFlcg8TsBT.sw5e14ig00000000",
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p><em><strong>Engineer:</strong> 1st level</em></p>\n<p>During your training you have derived powers from schematics with the aid of your wristpad. See chapter 10 for the general rules of techcasting and chapter 12 for the tech powers list.</p>\n<h3>@UUID[Compendium.sw5e.classfeatures.Item.ILUXew8jL7wx5mMH]{Tech Powers Known}</h3>\n<p>You learn 6 tech powers of your choice, and you learn more at higher levels, as shown in the Tech Powers Known column of the engineer table. You may not learn a tech power of a level higher than your Max Power Level.</p>\n<h3>@UUID[Compendium.sw5e.classfeatures.Item.jZ7c6hj4pYjD6V1e]{Tech Points}</h3>\n<p>You have a number of tech points equal to your engineer level x 2, as shown in the Tech Points column of the engineer table, + your Intelligence modifier. You use these tech points to cast tech powers. You regain all expended tech points when you finish a short or long rest.</p>\n<h3>@UUID[Compendium.sw5e.classfeatures.Item.tIzePBkueYl2f62c]{Max Power Level}</h3>\n<p>Many tech powers can be overcharged, consuming more tech points to create a greater effect. You can overcharge these powers to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the engineer table.</p>\n<p>You may only cast tech powers at 6th, 7th, 8th, and 9th-level once. You regain the ability to do so after a long rest.</p>\n<h3>@UUID[Compendium.sw5e.classfeatures.Item.TmJ1OVeFEfa8d7eF]{Techcasting Ability}</h3>\n<p>Intelligence is your techcasting ability for your tech powers. You use your Intelligence whenever a power refers to your techcasting ability. Additionally, you use your Intelligence modifier when setting the saving throw DC for a tech power you cast and when making an attack roll with one.</p>\n<p><em></em>_</p>\n<p><strong>Tech save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>\n<p><em></em>_</p>\n<p><strong>Tech attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>\n<p><em></em>_</p>\n<h3>@UUID[Compendium.sw5e.classfeatures.Item.c3i1VfsTjmSDy0uN]{Techcasting Focus}</h3>\n<p>You use a wristpad (found in chapter 5) or the tools in which you are granted proficiency by this class as a tech focus for your tech powers.</p>",
+          "chat": ""
+        },
+        "requirements": "Engineer",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "techcasting",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.classfeatures.Item.mCxdqUjDPAo38JTt",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1765768580101,
+        "lastModifiedBy": "xuF7L2mJfawnwhEn"
+      }
+    },
+    {
+      "_id": "DxyU9tF6Ajpsaw3v",
+      "name": "Potent Aptitude",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Class%20Features/ENGR-Bonus.webp",
+      "effects": [
+        {
+          "_id": "kgjdGZaM7KvRGDlN",
+          "changes": [
+            {
+              "key": "flags.dae",
+              "mode": 0,
+              "value": "BardicInspirationDice (floor(@classes.engineer.levels/5)+3) * 2",
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": 144,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": "Compendium.sw5e.classfeatures.fGsRWj9oEKcrukw6",
+          "transfer": true,
+          "flags": {
+            "core": {
+              "statusId": ""
+            }
+          },
+          "tint": "#ffffff",
+          "name": "Potent Aptitude Dice",
+          "description": "",
+          "statuses": [],
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "dnd5e",
+            "systemVersion": "4.3.9",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "img": "modules/sw5e/icons/packs/Class%20Features/ENGR-Bonus.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0
+        },
+        {
+          "_id": "87rFIkDTyzEZeKaW",
+          "changes": [
+            {
+              "key": "",
+              "mode": 2,
+              "value": "0",
+              "priority": 0
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": "Compendium.sw5e.classfeatures.fGsRWj9oEKcrukw6",
+          "transfer": false,
+          "flags": {
+            "core": {
+              "statusId": ""
+            }
+          },
+          "tint": "#ffffff",
+          "name": "Inspired",
+          "description": "",
+          "statuses": [],
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "dnd5e",
+            "systemVersion": "4.3.9",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "img": "icons/skills/melee/unarmed-punch-fist.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "mre-dnd5e": {
+          "formulaGroups": [
+            {
+              "label": "Primary",
+              "formulaSet": [
+                0
+              ]
+            }
+          ]
+        },
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:58.5650853+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-potent_aptitude.source-class.sourceName-engineer.level-1"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "migratedUses": null,
+          "sourceId": "Compendium.sw5e.classfeatures.Item.fGsRWj9oEKcrukw6",
+          "advancementOrigin": "JM9Hu4DFlcg8TsBT.sw5e14ig00000000"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p><em><strong>Engineer:</strong> 1st level</em></p>\n<p>Your technological experience lends you an uncommon insight that you can use to bolster your allies. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Potent Aptitude die, a [[/r d4]]. This die changes as you gain engineer levels, as shown in the Potent Aptitude column of the engineer table.</p>\n<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. Once the Potent Aptitude die is rolled, it is lost.</p>\n<p>A creature can have only one Potent Aptitude die at a time.</p>\n<p>You can use this feature twice. You gain an additional use at 5th, 9th, 13th, and 17th level. You regain any expended uses when you finish a short or long rest.</p>",
+          "chat": ""
+        },
+        "requirements": "Engineer",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "2",
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ],
+          "spent": 0
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "10",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "units": "ft",
+              "value": "60",
+              "override": false
+            },
+            "roll": {
+              "formula": "1d4",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "size": "1",
+                "type": "creature",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "potent-aptitude",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.classfeatures.Item.fGsRWj9oEKcrukw6",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Electroshock",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1527446+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-electroshock.level-0"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "last": {
+            "sw5e0attack00000": {
+              "damageType": {
+                "0": "lightning"
+              }
+            }
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/Electroshock.webp",
+      "system": {
+        "description": {
+          "value": "<p>Lightning springs from you to deliver a shock to a creature you try to touch. Make a melee tech attack against the target. You have advantage on the attack roll if the target is made of metal or wearing armor made of metal. On a hit, the target takes [[/r 1d8]] lightning damage and becomes shocked until the start of its next turn.</p>\n<p>This power's damage increases by [[/r 1d8]] when you reach 5th level ([[/r 2d8]]), 11th level ([[/r 3d8]]), and 17th level ([[/r 4d8]]).</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "units": "touch",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 0,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": false
+        },
+        "activities": {
+          "sw5e0attack00000": {
+            "_id": "sw5e0attack00000",
+            "activation": {
+              "condition": "",
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "",
+              "flat": false,
+              "type": {
+                "classification": "spell",
+                "value": "melee"
+              },
+              "critical": {
+                "threshold": null
+              }
+            },
+            "damage": {
+              "critical": {},
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": false
+                  },
+                  "denomination": 8,
+                  "number": 1,
+                  "scaling": {
+                    "mode": "",
+                    "number": 1
+                  },
+                  "types": [
+                    "lightning"
+                  ]
+                }
+              ],
+              "includeBase": true
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "override": false,
+              "units": "touch"
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "attack",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "electroshock",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "DFfSA29zhHDvZEen",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.Z3XGcIc1VXtQW64C",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Encrypted Message",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1527446+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-encrypted_message.level-0"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/EncryptedMessage.webp",
+      "system": {
+        "description": {
+          "value": "<p>You point your finger toward a creature within range that possesses a commlink and whisper a message. The target (and only the target) hears the message and can send an encrypted reply that only you can hear. These messages cannot be intercepted or decrypted by unenhanced means.</p>\n<p>You can cast this power through solid objects if you are familiar with the target and know it is beyond the barrier. 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the power. The power doesn't have to follow a straight line and can travel freely around corners or through openings.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 0,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": false
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "condition": "",
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "round",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "units": "ft",
+              "value": "120",
+              "override": false
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "encrypted-message",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "wJqVBoDe3pb7Ax9m",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.RZKUHTQ91h9i8XiJ",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Mending",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1727335+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-mending.level-0"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/Mending.webp",
+      "system": {
+        "description": {
+          "value": "<p>This ability repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn strap, or a leaking cup. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. If you target a droid or construction with this feature, it can spend and roll one of its Hit Dice and regain that many hit points.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "minute",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "units": "touch",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 0,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": true
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "condition": "",
+              "type": "minute",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "override": false,
+              "units": "touch"
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "mending",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "WhYHIodunrjLNNZi",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.1k52oYn3btadr8G1",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "On/Off",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1747317+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-onoff.level-0"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/On-Off.webp",
+      "system": {
+        "description": {
+          "value": "<p>This power allows you to activate or deactivate any electronic device within range, as long as the device is not being wielded by a creature, and has a clearly defined on or off function that can be easily accessed from the outside of the device. Any device that requires a software-based shutdown sequence to activate or deactivate cannot be affected by <em>on/off</em>.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "units": "",
+            "contiguous": false
+          }
+        },
+        "range": {
+          "value": "60",
+          "units": "ft"
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 0,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "condition": "",
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "units": "ft",
+              "value": "60",
+              "override": false
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "on-off"
+      },
+      "effects": [],
+      "_id": "NgR2HaRBZVjiszDt",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.xB1gBT01FENx6xht",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Decryption Program",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1497461+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-decryption_program.level-1"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/DecryptionProgram.webp",
+      "system": {
+        "description": {
+          "value": "<p>You gain insight into an encrypted message you are holding when you cast this power, granting you advantage on ability checks you make to decipher the document. </p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 1,
+        "school": "tec",
+        "properties": [
+          "concentration"
+        ],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": false
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "condition": "",
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "override": false,
+              "units": "self"
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "consumption": {
+              "spellSlot": false,
+              "targets": [
+                {
+                  "scaling": {
+                    "formula": "",
+                    "mode": "amount"
+                  },
+                  "target": "powercasting.tech.points.value",
+                  "type": "attribute",
+                  "value": "2"
+                }
+              ],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "sort": 0,
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "decryption-program",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "U2DKvuDYOYRdJxJ6",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.hNZoxQinmmIblpcG",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Energy Shield",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1537443+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-energy_shield.level-1"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/EnergyShield.webp",
+      "system": {
+        "description": {
+          "value": "<p>You quickly create an energy shield. Until the start of your next turn, you have a +5 bonus to AC. This includes the triggering attack. </p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "reaction",
+          "condition": "when you are hit by an attack",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 1,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": false
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "condition": "when you are hit by an attack",
+              "type": "reaction",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "round",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "override": false,
+              "units": "self"
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "consumption": {
+              "spellSlot": false,
+              "targets": [
+                {
+                  "scaling": {
+                    "formula": "",
+                    "mode": "amount"
+                  },
+                  "target": "powercasting.tech.points.value",
+                  "type": "attribute",
+                  "value": "2"
+                }
+              ],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "sort": 0,
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "energy-shield",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "3MrEOHe9osTocFvT",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.iqGdVAC4ZjCrakEh",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Holographic Disguise",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1607401+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-holographic_disguise.level-1"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/HolographicDisguise.webp",
+      "system": {
+        "description": {
+          "value": "<p>Until the power ends or you use an action to dismiss it, you can disguise yourself through the use of a hologram emitter. You can appear to be shorter or taller by about a foot and change the appearance of your body weight, but you cannot change the basic structure of your body. The hologram can include your clothes, armor, weapons, and other belongings on your person. </p>\n<p>The illusion is only visual, so any sort of physical contact will only interact with the real size and shape of you. A creature can use its action to make an Intelligence (Investigation) check against your tech save DC, seeing through the hologram on a success.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 1,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": false
+        },
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "condition": "",
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "override": false,
+              "units": "self"
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "consumption": {
+              "spellSlot": false,
+              "targets": [
+                {
+                  "scaling": {
+                    "formula": "",
+                    "mode": "amount"
+                  },
+                  "target": "powercasting.tech.points.value",
+                  "type": "attribute",
+                  "value": "2"
+                }
+              ],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "sort": 0,
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "holographic-disguise",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "ZDz5jbtdGiM67upt",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.8HfCFmDRWbaAz8d2",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Tracer Bolt",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:59.1907223+00:00",
+          "importer_version": 3,
+          "uid": "Power.name-tracer_bolt.level-1"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "last": {
+            "sw5e0attack00000": {
+              "damageType": {
+                "0": "energy"
+              }
+            }
+          }
+        },
+        "tidy5e-sheet": {
+          "section": "",
+          "actionSection": ""
+        }
+      },
+      "type": "spell",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Tech%20Powers/TracerBolt.webp",
+      "system": {
+        "description": {
+          "value": "<p>A flash of light streaks toward a creature of your choice within range. Make a ranged tech attack against the target. On a hit, the target takes [[/r 4d6]] energy damage, and the next attack roll made against this target before the end of your next turn has advantage. </p>\n<p><strong><em>Overcharge Tech.</em></strong> When you cast this power using a tech slot of 2nd level or higher, the damage increases by [[/r 1d6]] for each slot level above 1st.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "units": "",
+            "contiguous": false,
+            "type": ""
+          }
+        },
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "special": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "level": 1,
+        "school": "tec",
+        "properties": [],
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "preparation": {
+          "mode": "powerCasting",
+          "prepared": false
+        },
+        "activities": {
+          "sw5e0attack00000": {
+            "_id": "sw5e0attack00000",
+            "activation": {
+              "condition": "",
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "",
+              "flat": false,
+              "type": {
+                "classification": "spell",
+                "value": "ranged"
+              },
+              "critical": {
+                "threshold": null
+              }
+            },
+            "damage": {
+              "critical": {},
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": false
+                  },
+                  "denomination": 6,
+                  "number": 4,
+                  "scaling": {
+                    "mode": "whole",
+                    "number": 1
+                  },
+                  "types": [
+                    "energy"
+                  ]
+                }
+              ],
+              "includeBase": true
+            },
+            "description": {},
+            "duration": {
+              "units": "round",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "units": "ft",
+              "value": "120",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "attack",
+            "consumption": {
+              "spellSlot": false,
+              "targets": [
+                {
+                  "scaling": {
+                    "formula": "",
+                    "mode": "amount"
+                  },
+                  "target": "powercasting.tech.points.value",
+                  "type": "attribute",
+                  "value": "2"
+                }
+              ],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "sort": 0,
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "tracer-bolt",
+        "sourceClass": "",
+        "ability": ""
+      },
+      "effects": [],
+      "_id": "855F3TbuKMAEIDda",
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.techpowers.Item.IfEnYfZfY1vdEcM3",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "NNQDKJ7dsvwcBb2m",
+      "name": "Hold-out",
+      "type": "weapon",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Simple%20Blasters/Hold-Out.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:54.3905058+00:00",
+          "importer_version": 3,
+          "uid": "Weapon.name-hold_out.equipmentCategory-weapon"
+        },
+        "sw5e": {
+          "properties": {
+            "powerCell": "range 30/120",
+            "rel": 8,
+            "hidden": true,
+            "lgt": true,
+            "reload": 8
+          },
+          "reload": {
+            "types": [
+              "powerCell"
+            ]
+          }
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "last": {
+            "sw5e0attack00000": {
+              "damageType": {
+                "0": "energy"
+              }
+            }
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<h3>Hidden</h3>\n<p>You have advantage on Dexterity (Sleight of Hand) checks made to conceal a weapon with this property.</p>\n<h3>Light</h3>\n<p>A weapon with this property is small and easy to handle, making it ideal for use when engaging in Double- or Two-Weapon Fighting. See the rules for Double- and Two-Weapon Fighting in chapter 9.</p>\n<h3>Power cell (range 30/120) Cell</h3>\n<p>Weapons with this property are fueled by power cells, which must be loaded in order to fire the weapon. A power cell fuels a number of attacks equal to the weapon's reload number.</p>\n<h3>Reload 8</h3>\n<p>A number of shots equal to the reload number can be made with a weapon with this property. A character must then reload it using an action or a bonus action (their choice). You must have one free hand to reload.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 225,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "crewed": false,
+        "range": {
+          "value": 30,
+          "long": 120,
+          "units": "ft",
+          "reach": null
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "damage": {
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          },
+          "base": {
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1,
+              "mode": ""
+            },
+            "denomination": 4,
+            "number": 1,
+            "types": [
+              "energy"
+            ]
+          }
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [
+          "hidden",
+          "lgt",
+          "powerCell",
+          "rel"
+        ],
+        "proficient": null,
+        "type": {
+          "value": "simpleBL",
+          "baseItem": "hold-out"
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "magicalBonus": null,
+        "activities": {
+          "sw5e0attack00000": {
+            "_id": "sw5e0attack00000",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "",
+              "flat": false,
+              "type": {
+                "classification": "weapon",
+                "value": "ranged"
+              },
+              "critical": {
+                "threshold": null
+              }
+            },
+            "damage": {
+              "critical": {},
+              "parts": [],
+              "includeBase": true
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "override": false,
+              "units": "ft",
+              "value": "30"
+            },
+            "target": {
+              "template": {
+                "size": "1",
+                "type": "enemy",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "attack",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "hold-out",
+        "ammunition": {},
+        "attuned": false,
+        "equipped": true
+      },
+      "ownership": {
+        "default": 0,
+        "Rd33rQwdWKYNLCCr": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.blasters.Item.V7uuRrAqCINlkgFk",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "_id": "KW3u81nbeSrNFv2j",
+      "name": "Weave armor",
+      "type": "equipment",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Armor/PHB/WeaveArmor.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:54.4034987+00:00",
+          "importer_version": 3,
+          "uid": "Equipment.name-weave_armor.equipmentCategory-armor"
+        },
+        "dnd5e": {
+          "persistSourceMigration": true,
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Weave armor was constructed from a mesh of metal or composite plates and a padded jumpsuit. Variants of the armor included less plates and more padding for a lighter, though less protect-ive armor, and heavier plating with molded pieces to fit the wearer. Though the armor was available unmodified, most users personalized their armor.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 25,
+          "units": "lb"
+        },
+        "price": {
+          "value": 1000,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "armor": {
+          "value": 14,
+          "dex": 2,
+          "magicalBonus": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": null,
+        "properties": [],
+        "proficient": null,
+        "type": {
+          "value": "medium",
+          "baseItem": "weavearmor"
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "weave-armor",
+        "attuned": false,
+        "equipped": true
+      },
+      "ownership": {
+        "default": 0,
+        "xuF7L2mJfawnwhEn": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.armor.Item.hpN14Vhgw82PHeEz",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1765768580101,
+        "lastModifiedBy": "xuF7L2mJfawnwhEn"
+      }
+    },
+    {
+      "_id": "ErgoQzI59jzgfnTT",
+      "name": "Infuse Item",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Class%20Features/ENGR-Action.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:58.5650853+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-infuse_item.source-class.sourceName-engineer.level-2"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "migratedUses": null,
+          "sourceId": "Compendium.sw5e.classfeatures.Item.CBf0Ynl0NuA2z7sl",
+          "advancementOrigin": "JM9Hu4DFlcg8TsBT.sw5e15ig00000000"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p><em><strong>Engineer:</strong> 2nd level</em></p>\n<p>You gain the ability to temporarily enhance a weapon or armor. At the end of a long rest, you can touch one unenhanced object that is a suit of armor, a shield, or a simple or martial weapon. Until the end of your next long rest or until you die, the object becomes an enhanced item, granting a +1 bonus to AC if it's armor or a shield or a +1 bonus to attack and damage rolls if it's a weapon. </p>\n<p>Once you've used this feature, you can't use it again until you finish a long rest.</p>\n<p>This bonus increases to +2 at 10th level and +3 at 15th level.</p>",
+          "chat": ""
+        },
+        "requirements": "Engineer 2",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "1",
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "spent": 0
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "activities": {
+          "sw5e0utility0000": {
+            "_id": "sw5e0utility0000",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "override": false
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "img": null,
+            "range": {
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "formula": "",
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "template": {
+                "type": "",
+                "units": "",
+                "contiguous": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false,
+              "prompt": true
+            },
+            "type": "utility",
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "effects": [],
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "identifier": "infuse-item",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0,
+        "xuF7L2mJfawnwhEn": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.classfeatures.Item.CBf0Ynl0NuA2z7sl",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1765768580080,
+        "modifiedTime": 1765768580080,
+        "lastModifiedBy": "xuF7L2mJfawnwhEn"
+      }
+    },
+    {
+      "_id": "KfPqUpRzwlpbrfEB",
+      "name": "Tool Expertise",
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Class%20Features/ENGR-Passive.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:58.5650853+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-tool_expertise.source-class.sourceName-engineer.level-2"
+        },
+        "dnd5e": {
+          "persistSourceMigration": true,
+          "sourceId": "Compendium.sw5e.classfeatures.Item.mX2O4be5m3rPokOa",
+          "advancementOrigin": "JM9Hu4DFlcg8TsBT.sw5e15ig00000000"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p><em><strong>Engineer:</strong> 2nd level</em></p>\n<p>You gain expertise in any tool proficiencies you gain from this class.</p>",
+          "chat": ""
+        },
+        "requirements": "Engineer 2",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "tool-expertise",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0,
+        "xuF7L2mJfawnwhEn": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.classfeatures.Item.mX2O4be5m3rPokOa",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1765768580080,
+        "modifiedTime": 1765768580080,
+        "lastModifiedBy": "xuF7L2mJfawnwhEn"
+      }
+    },
+    {
+      "name": "Engineering Discipline",
+      "flags": {
+        "sw5e-importer": {
+          "timestamp": "2023-03-09T01:51:58.5650853+00:00",
+          "importer_version": 3,
+          "uid": "Feature.name-engineering_discipline.source-class.sourceName-engineer.level-3"
+        },
+        "dnd5e": {
+          "persistSourceMigration": true,
+          "sourceId": "Compendium.sw5e.classfeatures.Item.shyd8NefpiwSPqof",
+          "advancementOrigin": "JM9Hu4DFlcg8TsBT.sw5e16ig00000000"
+        }
+      },
+      "type": "feat",
+      "img": "https://assets.forge-vtt.com/66b26a13941db300b8cc4fb8/modules/sw5e/icons/packs/Class%20Features/ENGR-Passive.webp",
+      "system": {
+        "description": {
+          "value": "<p><em><strong>Engineer:</strong> 3rd, 6th, 14th, and 18th level</em></p>\n<p>You begin to focus on a specific engineering discipline, which is detailed at the end of the class description. </p>",
+          "chat": ""
+        },
+        "requirements": "Engineer 3",
+        "source": {
+          "custom": "PHB",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "engineering-discipline",
+        "advancement": [],
+        "enchant": {}
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "xuF7L2mJfawnwhEn": 3
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.sw5e.classfeatures.Item.shyd8NefpiwSPqof",
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1765768580080,
+        "modifiedTime": 1765768580080,
+        "lastModifiedBy": "xuF7L2mJfawnwhEn"
+      },
+      "_id": "WykmkZSnhR0H2uWw"
+    }
+  ],
+  "effects": [
+    {
+      "name": "Utility Droid (Companion)",
+      "img": "icons/svg/aura.svg",
+      "_id": "ufb4ORqukYhyDhYj",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.powercasting.tech.points.bonuses.overall",
+          "mode": 2,
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": 576,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "vShk9Wcsm2ZU7Wz7",
+  "flags": {
+    "dnd5e": {},
+    "enhancedcombathud": {
+      "activeWeaponSet": "1",
+      "weaponSets": {
+        "1": {
+          "primary": "Actor.zt8BVYuVjmElXtoY.Item.NNQDKJ7dsvwcBb2m"
+        }
+      }
+    },
+    "exportSource": {
+      "world": "dawn-of-defiance-cisco",
+      "system": "dnd5e",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.9"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1763341785287,
+    "modifiedTime": 1771214519323,
+    "lastModifiedBy": "tTCMQVo2Q9j3S50L"
+  }
+}

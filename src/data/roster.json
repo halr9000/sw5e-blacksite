@@ -1,0 +1,457 @@
+{
+  "fvtt-Actor-boris-7BRzg2DgZ1bBO6pP.json": {
+    "sourceName": "Borís",
+    "species": "Gungan",
+    "background": "Smuggler",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Operative",
+        "levels": 10
+      }
+    ],
+    "subclasses": [
+      "Gunslinger Practice"
+    ],
+    "abilities": {
+      "str": 15,
+      "dex": 17,
+      "con": 13,
+      "int": 14,
+      "wis": 12,
+      "cha": 14
+    },
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "expertise": false
+      },
+      {
+        "name": "Animal Handling",
+        "expertise": false
+      },
+      {
+        "name": "Athletics",
+        "expertise": false
+      },
+      {
+        "name": "Deception",
+        "expertise": false
+      },
+      {
+        "name": "Piloting",
+        "expertise": false
+      },
+      {
+        "name": "Stealth",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-dax-thorn-habx4L2skJff6owM.json": {
+    "sourceName": "Dax Thorn",
+    "species": "Human",
+    "background": "Scoundrel",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Scout",
+        "levels": 12
+      }
+    ],
+    "subclasses": [
+      "Teleportation Technique"
+    ],
+    "abilities": {
+      "str": 11,
+      "dex": 18,
+      "con": 12,
+      "int": 18,
+      "wis": 8,
+      "cha": 19
+    },
+    "skills": [
+      {
+        "name": "Deception",
+        "expertise": true
+      },
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Intimidation",
+        "expertise": true
+      },
+      {
+        "name": "Performance",
+        "expertise": false
+      },
+      {
+        "name": "Stealth",
+        "expertise": false
+      },
+      {
+        "name": "Technology",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-deech-zhetriss-ROUDUifraR5YzvA6.json": {
+    "sourceName": "Deech Zhetriss",
+    "species": "Rodian",
+    "background": "Jedi",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Sentinel",
+        "levels": 12
+      }
+    ],
+    "subclasses": [
+      "Path of the Forceblade"
+    ],
+    "abilities": {
+      "str": 10,
+      "dex": 18,
+      "con": 13,
+      "int": 11,
+      "wis": 18,
+      "cha": 13
+    },
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "expertise": false
+      },
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Perception",
+        "expertise": false
+      },
+      {
+        "name": "Stealth",
+        "expertise": false
+      },
+      {
+        "name": "Survival",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-dv-8-lL2HIwBbuBsCEcGM.json": {
+    "sourceName": "DV-8",
+    "species": "Droid, Class IV",
+    "background": "Outlaw",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Engineer",
+        "levels": 12
+      }
+    ],
+    "subclasses": [
+      "Astrotech Engineering (Companion)"
+    ],
+    "abilities": {
+      "str": 12,
+      "dex": 16,
+      "con": 15,
+      "int": 20,
+      "wis": 10,
+      "cha": 10
+    },
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "expertise": false
+      },
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Investigation",
+        "expertise": false
+      },
+      {
+        "name": "Piloting",
+        "expertise": false
+      },
+      {
+        "name": "Technology",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-dv-rangoon-267stNhGJNoofRK8.json": {
+    "sourceName": "DV-Rangoon",
+    "species": "Droid, Class II",
+    "background": "Companion",
+    "size": "Small",
+    "classes": [
+      {
+        "name": "Engineer",
+        "levels": 10
+      }
+    ],
+    "subclasses": [],
+    "abilities": {
+      "str": 18,
+      "dex": 9,
+      "con": 17,
+      "int": 10,
+      "wis": 14,
+      "cha": 8
+    },
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "expertise": false
+      },
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Medicine",
+        "expertise": false
+      },
+      {
+        "name": "Perception",
+        "expertise": false
+      },
+      {
+        "name": "Performance",
+        "expertise": false
+      },
+      {
+        "name": "Piloting",
+        "expertise": false
+      },
+      {
+        "name": "Technology",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-kreia-LNiVVkc0PgM4P6Dt.json": {
+    "sourceName": "Kreia",
+    "species": "Miraluka",
+    "background": "Jensaarai",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Consular",
+        "levels": 12
+      }
+    ],
+    "subclasses": [
+      "Way of Lightning"
+    ],
+    "abilities": {
+      "str": 8,
+      "dex": 16,
+      "con": 12,
+      "int": 16,
+      "wis": 18,
+      "cha": 12
+    },
+    "skills": [
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Investigation",
+        "expertise": false
+      },
+      {
+        "name": "Lore",
+        "expertise": false
+      },
+      {
+        "name": "Medicine",
+        "expertise": false
+      },
+      {
+        "name": "Perception",
+        "expertise": false
+      },
+      {
+        "name": "Stealth",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-maurice-jKfmsHpPNFlQeBWs.json": {
+    "sourceName": "Maurice",
+    "species": "Gungan",
+    "background": "Insurgent",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Engineer",
+        "levels": 12
+      }
+    ],
+    "subclasses": [
+      "Armormech Engineering"
+    ],
+    "abilities": {
+      "str": 16,
+      "dex": 13,
+      "con": 17,
+      "int": 17,
+      "wis": 11,
+      "cha": 11
+    },
+    "skills": [
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Lore",
+        "expertise": false
+      },
+      {
+        "name": "Medicine",
+        "expertise": false
+      },
+      {
+        "name": "Nature",
+        "expertise": false
+      },
+      {
+        "name": "Technology",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-morkk-the-guiltless-predator-u2uYHBvLM7NMtB8f.json": {
+    "sourceName": "Morkk the guiltless predator",
+    "species": "Togorian",
+    "background": "Bodyguard",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Fighter",
+        "levels": 12
+      }
+    ],
+    "subclasses": [
+      "Assault Specialist"
+    ],
+    "abilities": {
+      "str": 18,
+      "dex": 18,
+      "con": 16,
+      "int": 12,
+      "wis": 12,
+      "cha": 8
+    },
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "expertise": false
+      },
+      {
+        "name": "Athletics",
+        "expertise": false
+      },
+      {
+        "name": "Deception",
+        "expertise": false
+      },
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Intimidation",
+        "expertise": false
+      },
+      {
+        "name": "Investigation",
+        "expertise": false
+      },
+      {
+        "name": "Medicine",
+        "expertise": false
+      },
+      {
+        "name": "Perception",
+        "expertise": false
+      },
+      {
+        "name": "Performance",
+        "expertise": false
+      },
+      {
+        "name": "Persuasion",
+        "expertise": false
+      },
+      {
+        "name": "Stealth",
+        "expertise": false
+      },
+      {
+        "name": "Survival",
+        "expertise": false
+      }
+    ]
+  },
+  "fvtt-Actor-t'zel-nloZyUHeyUKNuQDw.json": {
+    "sourceName": "T'Zel",
+    "species": "Echani",
+    "background": "Bounty Hunter",
+    "size": "Medium",
+    "classes": [
+      {
+        "name": "Monk",
+        "levels": 11
+      }
+    ],
+    "subclasses": [
+      "Echani Order"
+    ],
+    "abilities": {
+      "str": 10,
+      "dex": 19,
+      "con": 13,
+      "int": 11,
+      "wis": 19,
+      "cha": 9
+    },
+    "skills": [
+      {
+        "name": "Acrobatics",
+        "expertise": false
+      },
+      {
+        "name": "Athletics",
+        "expertise": false
+      },
+      {
+        "name": "Insight",
+        "expertise": false
+      },
+      {
+        "name": "Lore",
+        "expertise": false
+      },
+      {
+        "name": "Perception",
+        "expertise": false
+      },
+      {
+        "name": "Stealth",
+        "expertise": true
+      }
+    ]
+  }
+}
