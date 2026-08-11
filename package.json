@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "roster": "node scripts/build-roster.mjs",
-    "test": "node --test scripts/ src/lib/",
+    "test": "node --test",
     "dev": "npm run roster && astro dev",
     "build": "npm run roster && astro build",
     "preview": "astro preview"
