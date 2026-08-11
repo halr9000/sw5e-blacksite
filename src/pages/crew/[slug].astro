@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css';
+import { render } from 'astro:content';
+import { getRoster, dossierRole } from '../../lib/roster.js';
+
+export async function getStaticPaths() {
+  const crew = await getRoster();
+  return crew.map((member) => ({ params: { slug: member.slug }, props: { member } }));
+}
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const { member } = Astro.props;
+const { sheet } = member;
+const { Content } = await render(member.entry);
+const heading = dossierRole(member.role, sheet);
+
+const ABILITIES = [['str', 'Strength'], ['dex', 'Dexterity'], ['con', 'Constitution'], ['int', 'Intelligence'], ['wis', 'Wisdom'], ['cha', 'Charisma']];
+
+const facts = [
+  sheet?.background && ['Background', sheet.background],
+  sheet?.size && ['Size', sheet.size],
+  member.languages.length > 0 && ['Languages', member.languages.join(', ')],
+].filter(Boolean);
+---
+<Layout title={member.displayName} active="Crew Roster">
+  <section class="detail-hero">
+    <div class="page-wrap dossier-grid">
+      <div class:list={['dossier-portrait', member.portrait ? 'has-image' : '']}>
+        {member.portrait
+          ? <img src={`${base}${member.portrait}`} alt={`${member.displayName} portrait`} />
+          : <span class="crew-initials">{member.initials}</span>}
+      </div>
+      <div class="detail-copy">
+        <p class="kicker">Personnel file // {member.status}</p>
+        <h1>{member.displayName}</h1>
+        {heading && <p class="mono dossier-role">{heading}</p>}
+        <p class="lede">{member.tagline}</p>
+        {facts.length > 0 && <div class="spec-table">
+          {facts.map(([label, value]) => <div class="spec-row"><span>{label}</span><strong>{value}</strong></div>)}
+        </div>}
+      </div>
+    </div>
+  </section>
+
+  {sheet && <section class="section">
+    <div class="page-wrap">
+      <div class="section-head"><div><p class="kicker">Assessment</p><h2>Aptitudes</h2></div></div>
+      <div class="stats ability-grid">
+        {ABILITIES.map(([key, label]) => <div class="stat"><strong>{sheet.abilities[key]}</strong><span>{label}</span></div>)}
+      </div>
+      {sheet.skills.length > 0 && <>
+        <p class="kicker dossier-subhead">Proficient</p>
+        {sheet.skills.some((skill) => skill.expertise) && <p class="mono text-muted">◈ expertise</p>}
+        <div class="skill-tags">
+          {sheet.skills.map((skill) => <span class:list={[skill.expertise ? 'expertise' : '']}>{skill.name}{skill.expertise && <span aria-label="expertise"> ◈</span>}</span>)}
+        </div>
+      </>}
+    </div>
+  </section>}
+
+  <section class="section">
+    <div class="page-wrap">
+      <div class="dossier-body"><Content /></div>
+      <p class="dossier-back"><a class="card-link" href={`${base}crew/`}>← BACK TO ROSTER</a></p>
+    </div>
+  </section>
+</Layout>
