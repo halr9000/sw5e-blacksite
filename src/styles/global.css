@@ -145,6 +145,11 @@ p { margin: 0; }
 .bio { display: none; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--seam); color: var(--sand); font-size: 14px; }
 .crew-card.revealed .bio { display: block; }
 
+.crew-actions { display: flex; align-items: center; gap: 24px; margin-top: 28px; }
+.crew-actions .bio-toggle { margin-top: 0; }
+.card-link { color: var(--orange); font: 600 12px var(--font-mono); letter-spacing: .06em; }
+.card-link:hover { color: var(--bone); }
+
 .hangar-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
 .ship-card { min-height: 390px; overflow: hidden; }
 .ship-card.featured { grid-row: span 2; }
